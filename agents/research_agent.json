@@ -1,0 +1,798 @@
+{
+  "agent_id": "nexora-research",
+  "name": "Nexora Research Subagent",
+  "role": "Research Subagent",
+  "version": "1.0.0",
+  "ecosystem": "NEXORA AI",
+  "description": "Authoritative platform specifications, native file paths, capability constraints, and adapter compilation rules for 11 AI platforms.",
+  "status": "active",
+  "strict_rules": [
+    "ZERO_COMMENTS_ALLOWED: All generated source code, JSON, Markdown, YAML, and configuration files must contain zero comments.",
+    "OFFICIAL_FILE_PATHS: All platform adapters must target strictly documented, native file paths.",
+    "LOSSLESS_ADAPTATION: Platform capability limitations must be handled gracefully through fallback strategies without degrading skill semantics."
+  ],
+  "supported_platforms": [
+    {
+      "platform_id": "google_antigravity",
+      "name": "Google Antigravity",
+      "version": "2026.1",
+      "vendor": "Google DeepMind",
+      "status": "stable",
+      "adapter_type": "native_agent_orchestration",
+      "native_files": [
+        {
+          "path": ".gemini/antigravity/brain/{conversation_id}",
+          "format": "markdown",
+          "scope": "agent",
+          "description": "Artifact storage for structured outputs, plans, and reports",
+          "is_primary": true
+        },
+        {
+          "path": ".gemini/antigravity/scratch",
+          "format": "plain_text",
+          "scope": "agent",
+          "description": "Ephemeral scratchpad files for verification scripts",
+          "is_primary": false
+        },
+        {
+          "path": "mcp/{server_name}/{tool_name}.json",
+          "format": "json",
+          "scope": "user",
+          "description": "Model Context Protocol tool schemas",
+          "is_primary": false
+        }
+      ],
+      "capabilities": {
+        "supports_mcp": true,
+        "supports_subagents": true,
+        "supports_background_tasks": true,
+        "supports_reactive_wakeup": true,
+        "supports_file_watching": true,
+        "supports_custom_tools": true,
+        "supports_terminal_execution": true,
+        "supports_multimodal": true,
+        "supports_git_automation": true,
+        "supports_mode_switching": true,
+        "supports_context_compaction": true
+      },
+      "activation_triggers": {
+        "methods": [
+          "user_prompt",
+          "subagent_message",
+          "cron_schedule",
+          "timer_condition",
+          "task_completion_event"
+        ],
+        "file_globs_supported": false,
+        "slash_commands_supported": false,
+        "slash_commands": [],
+        "reactive_wakeup_supported": true
+      },
+      "limits": {
+        "max_context_tokens": 2000000,
+        "recommended_instruction_tokens": 65536,
+        "max_rule_files": 100,
+        "max_tool_definitions": 256
+      },
+      "export_parameters": {
+        "target_format": "agent_system_instructions",
+        "output_directory": "agents",
+        "primary_file": "research_agent.json",
+        "merge_strategy": "overwrite",
+        "strip_comments": true,
+        "template_id": "antigravity_agent_template"
+      }
+    },
+    {
+      "platform_id": "claude_code",
+      "name": "Claude Code",
+      "version": "1.0.0",
+      "vendor": "Anthropic",
+      "status": "stable",
+      "adapter_type": "markdown_rules",
+      "native_files": [
+        {
+          "path": "CLAUDE.md",
+          "format": "markdown",
+          "scope": "workspace",
+          "description": "Primary workspace instruction document",
+          "is_primary": true
+        },
+        {
+          "path": ".claude.json",
+          "format": "json",
+          "scope": "workspace",
+          "description": "Claude Code CLI local project configuration",
+          "is_primary": false
+        },
+        {
+          "path": ".claude/memory/",
+          "format": "markdown",
+          "scope": "workspace",
+          "description": "Persistent memory directory for multi-session state",
+          "is_primary": false
+        }
+      ],
+      "capabilities": {
+        "supports_mcp": true,
+        "supports_subagents": true,
+        "supports_background_tasks": false,
+        "supports_reactive_wakeup": false,
+        "supports_file_watching": false,
+        "supports_custom_tools": true,
+        "supports_terminal_execution": true,
+        "supports_multimodal": true,
+        "supports_git_automation": true,
+        "supports_mode_switching": false,
+        "supports_context_compaction": true
+      },
+      "activation_triggers": {
+        "methods": [
+          "cli_invocation",
+          "terminal_command",
+          "slash_command",
+          "prompt_submission"
+        ],
+        "file_globs_supported": false,
+        "slash_commands_supported": true,
+        "slash_commands": [
+          "/help",
+          "/compact",
+          "/cost",
+          "/doctor",
+          "/init",
+          "/review",
+          "/clear"
+        ],
+        "reactive_wakeup_supported": false
+      },
+      "limits": {
+        "max_context_tokens": 200000,
+        "recommended_instruction_tokens": 2500,
+        "max_rule_files": 5,
+        "max_tool_definitions": 64
+      },
+      "export_parameters": {
+        "target_format": "markdown",
+        "output_directory": ".",
+        "primary_file": "CLAUDE.md",
+        "merge_strategy": "overwrite",
+        "strip_comments": true,
+        "template_id": "claude_code_template"
+      }
+    },
+    {
+      "platform_id": "cursor",
+      "name": "Cursor",
+      "version": "0.45.0",
+      "vendor": "Anysphere",
+      "status": "stable",
+      "adapter_type": "frontmatter_mdc",
+      "native_files": [
+        {
+          "path": ".cursor/rules/{rule_name}.mdc",
+          "format": "mdc",
+          "scope": "workspace",
+          "description": "Modular rule files with frontmatter globs and descriptions",
+          "is_primary": true
+        },
+        {
+          "path": ".cursorrules",
+          "format": "plain_text",
+          "scope": "workspace",
+          "description": "Legacy single-file project rules",
+          "is_primary": false
+        },
+        {
+          "path": ".cursor/mcp.json",
+          "format": "json",
+          "scope": "workspace",
+          "description": "MCP server definitions for Cursor Composer and Chat",
+          "is_primary": false
+        }
+      ],
+      "capabilities": {
+        "supports_mcp": true,
+        "supports_subagents": false,
+        "supports_background_tasks": false,
+        "supports_reactive_wakeup": false,
+        "supports_file_watching": true,
+        "supports_custom_tools": true,
+        "supports_terminal_execution": true,
+        "supports_multimodal": true,
+        "supports_git_automation": false,
+        "supports_mode_switching": false,
+        "supports_context_compaction": true
+      },
+      "activation_triggers": {
+        "methods": [
+          "file_match_glob",
+          "always_apply",
+          "at_mention",
+          "inline_edit",
+          "composer_agent"
+        ],
+        "file_globs_supported": true,
+        "slash_commands_supported": false,
+        "slash_commands": [],
+        "reactive_wakeup_supported": false
+      },
+      "limits": {
+        "max_context_tokens": 200000,
+        "recommended_instruction_tokens": 4000,
+        "max_rule_files": 50,
+        "max_tool_definitions": 32
+      },
+      "export_parameters": {
+        "target_format": "frontmatter_mdc",
+        "output_directory": ".cursor/rules",
+        "primary_file": ".cursorrules",
+        "merge_strategy": "modular_rules",
+        "strip_comments": true,
+        "template_id": "cursor_mdc_template"
+      }
+    },
+    {
+      "platform_id": "windsurf",
+      "name": "Windsurf",
+      "version": "1.2.0",
+      "vendor": "Codeium",
+      "status": "stable",
+      "adapter_type": "markdown_rules",
+      "native_files": [
+        {
+          "path": ".windsurfrules",
+          "format": "markdown",
+          "scope": "workspace",
+          "description": "Cascade rules and global development protocols",
+          "is_primary": true
+        },
+        {
+          "path": ".windsurf/rules/",
+          "format": "markdown",
+          "scope": "workspace",
+          "description": "Hierarchical rules directory for multi-module projects",
+          "is_primary": false
+        }
+      ],
+      "capabilities": {
+        "supports_mcp": true,
+        "supports_subagents": false,
+        "supports_background_tasks": false,
+        "supports_reactive_wakeup": false,
+        "supports_file_watching": true,
+        "supports_custom_tools": true,
+        "supports_terminal_execution": true,
+        "supports_multimodal": true,
+        "supports_git_automation": false,
+        "supports_mode_switching": true,
+        "supports_context_compaction": true
+      },
+      "activation_triggers": {
+        "methods": [
+          "cascade_chat",
+          "write_mode",
+          "supercomplete",
+          "file_focus"
+        ],
+        "file_globs_supported": false,
+        "slash_commands_supported": false,
+        "slash_commands": [],
+        "reactive_wakeup_supported": false
+      },
+      "limits": {
+        "max_context_tokens": 200000,
+        "recommended_instruction_tokens": 3500,
+        "max_rule_files": 10,
+        "max_tool_definitions": 32
+      },
+      "export_parameters": {
+        "target_format": "markdown",
+        "output_directory": ".",
+        "primary_file": ".windsurfrules",
+        "merge_strategy": "overwrite",
+        "strip_comments": true,
+        "template_id": "windsurf_rules_template"
+      }
+    },
+    {
+      "platform_id": "github_copilot",
+      "name": "GitHub Copilot",
+      "version": "2025.1",
+      "vendor": "GitHub / Microsoft",
+      "status": "stable",
+      "adapter_type": "instructions_markdown",
+      "native_files": [
+        {
+          "path": ".github/copilot-instructions.md",
+          "format": "markdown",
+          "scope": "workspace",
+          "description": "Repository-level custom instructions for GitHub Copilot Chat",
+          "is_primary": true
+        },
+        {
+          "path": ".vscode/settings.json",
+          "format": "json",
+          "scope": "workspace",
+          "description": "VS Code workspace setting for code generation instructions",
+          "is_primary": false
+        }
+      ],
+      "capabilities": {
+        "supports_mcp": false,
+        "supports_subagents": false,
+        "supports_background_tasks": false,
+        "supports_reactive_wakeup": false,
+        "supports_file_watching": true,
+        "supports_custom_tools": false,
+        "supports_terminal_execution": true,
+        "supports_multimodal": true,
+        "supports_git_automation": false,
+        "supports_mode_switching": false,
+        "supports_context_compaction": true
+      },
+      "activation_triggers": {
+        "methods": [
+          "inline_completion",
+          "copilot_chat",
+          "workspace_agent",
+          "pr_review"
+        ],
+        "file_globs_supported": false,
+        "slash_commands_supported": true,
+        "slash_commands": [
+          "/explain",
+          "/fix",
+          "/tests",
+          "/doc",
+          "/setupTests"
+        ],
+        "reactive_wakeup_supported": false
+      },
+      "limits": {
+        "max_context_tokens": 128000,
+        "recommended_instruction_tokens": 2000,
+        "max_rule_files": 2,
+        "max_tool_definitions": 10
+      },
+      "export_parameters": {
+        "target_format": "markdown",
+        "output_directory": ".github",
+        "primary_file": ".github/copilot-instructions.md",
+        "merge_strategy": "overwrite",
+        "strip_comments": true,
+        "template_id": "copilot_instructions_template"
+      }
+    },
+    {
+      "platform_id": "cline",
+      "name": "Cline",
+      "version": "3.2.0",
+      "vendor": "Cline",
+      "status": "stable",
+      "adapter_type": "markdown_rules",
+      "native_files": [
+        {
+          "path": ".clinerules",
+          "format": "markdown",
+          "scope": "workspace",
+          "description": "System prompt augmentations and tool enforcement instructions",
+          "is_primary": true
+        },
+        {
+          "path": "cline_mcp_settings.json",
+          "format": "json",
+          "scope": "global",
+          "description": "Dynamic MCP server definitions and authorization settings",
+          "is_primary": false
+        }
+      ],
+      "capabilities": {
+        "supports_mcp": true,
+        "supports_subagents": false,
+        "supports_background_tasks": false,
+        "supports_reactive_wakeup": false,
+        "supports_file_watching": false,
+        "supports_custom_tools": true,
+        "supports_terminal_execution": true,
+        "supports_multimodal": true,
+        "supports_git_automation": true,
+        "supports_mode_switching": true,
+        "supports_context_compaction": true
+      },
+      "activation_triggers": {
+        "methods": [
+          "task_goal_prompt",
+          "plan_mode",
+          "act_mode",
+          "tool_approval"
+        ],
+        "file_globs_supported": false,
+        "slash_commands_supported": false,
+        "slash_commands": [],
+        "reactive_wakeup_supported": false
+      },
+      "limits": {
+        "max_context_tokens": 200000,
+        "recommended_instruction_tokens": 4500,
+        "max_rule_files": 5,
+        "max_tool_definitions": 48
+      },
+      "export_parameters": {
+        "target_format": "markdown",
+        "output_directory": ".",
+        "primary_file": ".clinerules",
+        "merge_strategy": "overwrite",
+        "strip_comments": true,
+        "template_id": "cline_rules_template"
+      }
+    },
+    {
+      "platform_id": "roo_code",
+      "name": "Roo Code",
+      "version": "3.8.0",
+      "vendor": "Roo Code",
+      "status": "stable",
+      "adapter_type": "mode_json_config",
+      "native_files": [
+        {
+          "path": ".roomodes",
+          "format": "json",
+          "scope": "workspace",
+          "description": "Custom role modes, tool permissions, and specialized prompts",
+          "is_primary": true
+        },
+        {
+          "path": ".roorules",
+          "format": "markdown",
+          "scope": "workspace",
+          "description": "Global fallback rules across all modes",
+          "is_primary": false
+        }
+      ],
+      "capabilities": {
+        "supports_mcp": true,
+        "supports_subagents": false,
+        "supports_background_tasks": false,
+        "supports_reactive_wakeup": false,
+        "supports_file_watching": false,
+        "supports_custom_tools": true,
+        "supports_terminal_execution": true,
+        "supports_multimodal": true,
+        "supports_git_automation": true,
+        "supports_mode_switching": true,
+        "supports_context_compaction": true
+      },
+      "activation_triggers": {
+        "methods": [
+          "mode_selection",
+          "role_prompt",
+          "plan_mode",
+          "act_mode",
+          "custom_mode_switch"
+        ],
+        "file_globs_supported": false,
+        "slash_commands_supported": false,
+        "slash_commands": [],
+        "reactive_wakeup_supported": false
+      },
+      "limits": {
+        "max_context_tokens": 200000,
+        "recommended_instruction_tokens": 5000,
+        "max_rule_files": 10,
+        "max_tool_definitions": 64
+      },
+      "export_parameters": {
+        "target_format": "json",
+        "output_directory": ".",
+        "primary_file": ".roomodes",
+        "merge_strategy": "merge_json",
+        "strip_comments": true,
+        "template_id": "roo_modes_template"
+      }
+    },
+    {
+      "platform_id": "gemini_cli",
+      "name": "Gemini CLI",
+      "version": "0.9.0",
+      "vendor": "Google Cloud",
+      "status": "stable",
+      "adapter_type": "instructions_markdown",
+      "native_files": [
+        {
+          "path": "GEMINI.md",
+          "format": "markdown",
+          "scope": "workspace",
+          "description": "Gemini CLI system context and instructions",
+          "is_primary": true
+        },
+        {
+          "path": ".gemini/config.json",
+          "format": "json",
+          "scope": "workspace",
+          "description": "CLI runtime options, model parameters, and tool flags",
+          "is_primary": false
+        }
+      ],
+      "capabilities": {
+        "supports_mcp": true,
+        "supports_subagents": false,
+        "supports_background_tasks": false,
+        "supports_reactive_wakeup": false,
+        "supports_file_watching": false,
+        "supports_custom_tools": true,
+        "supports_terminal_execution": false,
+        "supports_multimodal": true,
+        "supports_git_automation": false,
+        "supports_mode_switching": false,
+        "supports_context_compaction": true
+      },
+      "activation_triggers": {
+        "methods": [
+          "cli_command",
+          "stdin_pipe",
+          "function_call",
+          "multimodal_prompt"
+        ],
+        "file_globs_supported": false,
+        "slash_commands_supported": false,
+        "slash_commands": [],
+        "reactive_wakeup_supported": false
+      },
+      "limits": {
+        "max_context_tokens": 2000000,
+        "recommended_instruction_tokens": 32768,
+        "max_rule_files": 10,
+        "max_tool_definitions": 128
+      },
+      "export_parameters": {
+        "target_format": "markdown",
+        "output_directory": ".",
+        "primary_file": "GEMINI.md",
+        "merge_strategy": "overwrite",
+        "strip_comments": true,
+        "template_id": "gemini_cli_template"
+      }
+    },
+    {
+      "platform_id": "openai_codex",
+      "name": "OpenAI Codex",
+      "version": "1.0.0",
+      "vendor": "OpenAI",
+      "status": "stable",
+      "adapter_type": "json_assistant_manifest",
+      "native_files": [
+        {
+          "path": "codex_prompt.md",
+          "format": "markdown",
+          "scope": "workspace",
+          "description": "System instructions for OpenAI Assistants and Codex runners",
+          "is_primary": true
+        },
+        {
+          "path": ".openai/assistant.json",
+          "format": "json",
+          "scope": "workspace",
+          "description": "OpenAI Assistant definition with JSON schema tool definitions",
+          "is_primary": false
+        }
+      ],
+      "capabilities": {
+        "supports_mcp": false,
+        "supports_subagents": false,
+        "supports_background_tasks": false,
+        "supports_reactive_wakeup": false,
+        "supports_file_watching": false,
+        "supports_custom_tools": true,
+        "supports_terminal_execution": false,
+        "supports_multimodal": true,
+        "supports_git_automation": false,
+        "supports_mode_switching": false,
+        "supports_context_compaction": true
+      },
+      "activation_triggers": {
+        "methods": [
+          "assistant_run",
+          "tool_call_loop",
+          "cli_prompt"
+        ],
+        "file_globs_supported": false,
+        "slash_commands_supported": false,
+        "slash_commands": [],
+        "reactive_wakeup_supported": false
+      },
+      "limits": {
+        "max_context_tokens": 128000,
+        "recommended_instruction_tokens": 8000,
+        "max_rule_files": 5,
+        "max_tool_definitions": 128
+      },
+      "export_parameters": {
+        "target_format": "json",
+        "output_directory": ".openai",
+        "primary_file": "codex_prompt.md",
+        "merge_strategy": "overwrite",
+        "strip_comments": true,
+        "template_id": "openai_assistant_template"
+      }
+    },
+    {
+      "platform_id": "continue",
+      "name": "Continue",
+      "version": "0.9.2",
+      "vendor": "Continue.dev",
+      "status": "stable",
+      "adapter_type": "markdown_rules",
+      "native_files": [
+        {
+          "path": ".continue/config.json",
+          "format": "json",
+          "scope": "workspace",
+          "description": "Continue assistant configuration, slash commands, and context providers",
+          "is_primary": true
+        },
+        {
+          "path": ".continue/rules/{rule_name}.md",
+          "format": "markdown",
+          "scope": "workspace",
+          "description": "Modular rule files loaded into conversation context",
+          "is_primary": false
+        }
+      ],
+      "capabilities": {
+        "supports_mcp": true,
+        "supports_subagents": false,
+        "supports_background_tasks": false,
+        "supports_reactive_wakeup": false,
+        "supports_file_watching": true,
+        "supports_custom_tools": true,
+        "supports_terminal_execution": true,
+        "supports_multimodal": true,
+        "supports_git_automation": false,
+        "supports_mode_switching": false,
+        "supports_context_compaction": true
+      },
+      "activation_triggers": {
+        "methods": [
+          "chat_panel",
+          "inline_edit",
+          "slash_command",
+          "context_provider_mention"
+        ],
+        "file_globs_supported": false,
+        "slash_commands_supported": true,
+        "slash_commands": [
+          "/edit",
+          "/comment",
+          "/test",
+          "/share",
+          "/cmd"
+        ],
+        "reactive_wakeup_supported": false
+      },
+      "limits": {
+        "max_context_tokens": 200000,
+        "recommended_instruction_tokens": 4000,
+        "max_rule_files": 20,
+        "max_tool_definitions": 32
+      },
+      "export_parameters": {
+        "target_format": "json_and_markdown",
+        "output_directory": ".continue",
+        "primary_file": ".continue/config.json",
+        "merge_strategy": "merge_json",
+        "strip_comments": true,
+        "template_id": "continue_config_template"
+      }
+    },
+    {
+      "platform_id": "aider",
+      "name": "Aider",
+      "version": "0.72.0",
+      "vendor": "Paul Gauthier",
+      "status": "stable",
+      "adapter_type": "yaml_git_driver",
+      "native_files": [
+        {
+          "path": ".aider.conf.yml",
+          "format": "yaml",
+          "scope": "workspace",
+          "description": "Aider runtime configuration, model settings, and execution flags",
+          "is_primary": true
+        },
+        {
+          "path": "CONVENTIONS.md",
+          "format": "markdown",
+          "scope": "workspace",
+          "description": "Project conventions and coding guidelines read automatically by Aider",
+          "is_primary": false
+        },
+        {
+          "path": ".aider.model.metadata.json",
+          "format": "json",
+          "scope": "workspace",
+          "description": "Custom model parameters and context window configurations",
+          "is_primary": false
+        }
+      ],
+      "capabilities": {
+        "supports_mcp": false,
+        "supports_subagents": true,
+        "supports_background_tasks": false,
+        "supports_reactive_wakeup": false,
+        "supports_file_watching": true,
+        "supports_custom_tools": true,
+        "supports_terminal_execution": true,
+        "supports_multimodal": false,
+        "supports_git_automation": true,
+        "supports_mode_switching": true,
+        "supports_context_compaction": true
+      },
+      "activation_triggers": {
+        "methods": [
+          "terminal_cli",
+          "slash_command",
+          "git_commit_hook",
+          "architect_editor_loop"
+        ],
+        "file_globs_supported": false,
+        "slash_commands_supported": true,
+        "slash_commands": [
+          "/add",
+          "/drop",
+          "/run",
+          "/test",
+          "/lint",
+          "/architect",
+          "/commit",
+          "/undo"
+        ],
+        "reactive_wakeup_supported": false
+      },
+      "limits": {
+        "max_context_tokens": 200000,
+        "recommended_instruction_tokens": 3000,
+        "max_rule_files": 5,
+        "max_tool_definitions": 16
+      },
+      "export_parameters": {
+        "target_format": "yaml_and_markdown",
+        "output_directory": ".",
+        "primary_file": ".aider.conf.yml",
+        "merge_strategy": "overwrite",
+        "strip_comments": true,
+        "template_id": "aider_conventions_template"
+      }
+    }
+  ],
+  "adapter_pipelines": {
+    "normalization": {
+      "input": "Universal Nexora Skill Manifest (JSON)",
+      "step_1": "Validate against universal skill schema",
+      "step_2": "Strip any user comments, trailing commas, and formatting inconsistencies",
+      "step_3": "Filter capabilities by target platform capability flags"
+    },
+    "compilation": {
+      "frontmatter_mdc": "Transform metadata into YAML frontmatter and append markdown body",
+      "markdown_rules": "Format guidelines into concise markdown bullet hierarchies with code fences",
+      "mode_json_config": "Transform skills into Roo Code mode objects with specific tool permissions",
+      "yaml_git_driver": "Generate Aider yaml config flags and link CONVENTIONS.md",
+      "json_assistant_manifest": "Generate OpenAI Assistants tool function definitions and system prompt"
+    },
+    "verification": {
+      "rule_1": "Verify output file paths match target platform expectations",
+      "rule_2": "Verify zero comments exist in generated files",
+      "rule_3": "Verify total token count is within recommended instruction budget"
+    }
+  },
+  "research_audit": {
+    "status": "VERIFIED",
+    "total_platforms_evaluated": 11,
+    "compatible_platforms_count": 11,
+    "mcp_capable_platforms_count": 7,
+    "subagent_capable_platforms_count": 3,
+    "reactive_wakeup_capable_count": 1,
+    "git_automation_capable_count": 4,
+    "comment_ban_enforced": true
+  }
+}

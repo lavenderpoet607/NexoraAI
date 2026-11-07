@@ -1,0 +1,138 @@
+{
+  "id": "nexora.network_protocols_and_traffic_analysis.network_bandwidth_and_latency_profiling.tcp_window_003",
+  "name": "Network Bandwidth and Latency Profiling Tcp Window Engine 3",
+  "purpose": "Executes precision tcp window procedures for network bandwidth and latency profiling within network protocols and traffic analysis workflows",
+  "category": "network_protocols_and_traffic_analysis",
+  "subcategory": "network_bandwidth_and_latency_profiling",
+  "description": "Automates advanced tcp window operations adhering strictly to deterministic execution contracts. This capability provides verifiable output transformation, deep static and dynamic inspection, and structured failure recovery for round-trip time estimation, packet jitter calculation, tcp window sizing, and bottleneck detection.",
+  "supported_platforms": [
+    "linux",
+    "cross_platform",
+    "windows"
+  ],
+  "activation_conditions": {
+    "intent_patterns": [
+      "run tcp window on network bandwidth and latency profiling",
+      "execute network bandwidth and latency profiling tcp window engine 3",
+      "analyze tcp window parameters",
+      "tcp window network protocols and traffic analysis"
+    ],
+    "prerequisites": [
+      "Valid input descriptor for tcp window",
+      "Target environment initialized with rea connectivity"
+    ]
+  },
+  "required_inputs": [
+    {
+      "name": "target_payload",
+      "type": "string",
+      "description": "Primary target data or identifier for tcp window execution",
+      "required": true
+    },
+    {
+      "name": "execution_options",
+      "type": "object",
+      "description": "Deterministic execution flags, timeout settings, and output format constraints",
+      "required": false
+    }
+  ],
+  "expected_outputs": [
+    {
+      "name": "execution_report",
+      "type": "object",
+      "description": "Structured result payload containing telemetry and status for tcp window"
+    },
+    {
+      "name": "transformed_artifact",
+      "type": "string",
+      "description": "Path or identifier of the generated or transformed output asset"
+    }
+  ],
+  "execution_workflow": [
+    {
+      "step_number": 1,
+      "action": "Validate inputs and verify rea pre-conditions",
+      "description": "Assert target payload presence and confirm environment permissions for network_protocols_and_traffic_analysis",
+      "expected_outcome": "Input payload confirmed valid and environment ready"
+    },
+    {
+      "step_number": 2,
+      "action": "Execute core tcp window routine",
+      "description": "Dispatch execution envelope to inspect_packet_capture under rea runtime boundary",
+      "expected_outcome": "Core operation completed without errors"
+    },
+    {
+      "step_number": 3,
+      "action": "Verify execution integrity and enforce invariants",
+      "description": "Inspect returned artifacts against validation schema and ensure no constraint violations",
+      "expected_outcome": "Invariant checks verified with clean validation status"
+    },
+    {
+      "step_number": 4,
+      "action": "Package structured completion telemetry",
+      "description": "Format output report and serialize state into persistent cache registry",
+      "expected_outcome": "Structured telemetry emitted and state persisted"
+    }
+  ],
+  "decision_logic": {
+    "rules": [
+      {
+        "condition": "Environment rea unavailable",
+        "action": "Route task through fallback executor or mock sandbox"
+      },
+      {
+        "condition": "Output constraint validation failure",
+        "action": "Halt pipeline and emit deterministic diagnostic error report"
+      }
+    ],
+    "fallback": "Switch to conservative inspection mode and alert orchestrator"
+  },
+  "tool_requirements": [
+    {
+      "tool_name": "inspect_packet_capture",
+      "server_name": "rea",
+      "optional": false
+    }
+  ],
+  "dependencies": {
+    "system_libraries": [
+      "libc.so.6"
+    ],
+    "runtime_packages": [
+      "nexora-core",
+      "jsonschema"
+    ],
+    "skill_dependencies": []
+  },
+  "safety_restrictions": [
+    "Enforce strict read-only boundary when inspecting external untrusted inputs",
+    "Prohibit destructive file operations without prior checksum verification",
+    "Zero-comment output code enforcement on all synthesized assets"
+  ],
+  "validation_criteria": [
+    "Execution output matches expected response schema",
+    "Telemetry status confirms successful tcp window transformation",
+    "Zero syntax or runtime exceptions encountered"
+  ],
+  "practical_examples": [
+    {
+      "scenario": "Production execution of Network Bandwidth and Latency Profiling Tcp Window Engine 3",
+      "input": {
+        "target_payload": "payload://network_bandwidth_and_latency_profiling/tcp_window_sample.dat",
+        "execution_options": {
+          "strict_mode": true,
+          "timeout_seconds": 60
+        }
+      },
+      "expected_output": {
+        "status": "success",
+        "action": "tcp_window",
+        "verified": true
+      }
+    }
+  ],
+  "related_skills": [
+    "nexora.network_protocols_and_traffic_analysis.network_bandwidth_and_latency_profiling.fallback_001"
+  ],
+  "version": "1.0.0"
+}

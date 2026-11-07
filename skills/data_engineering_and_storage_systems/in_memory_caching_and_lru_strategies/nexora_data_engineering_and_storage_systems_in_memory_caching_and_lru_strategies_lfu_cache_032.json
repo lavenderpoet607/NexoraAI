@@ -1,0 +1,138 @@
+{
+  "id": "nexora.data_engineering_and_storage_systems.in_memory_caching_and_lru_strategies.lfu_cache_032",
+  "name": "In-Memory Caching and LRU Strategies Lfu Cache Engine 32",
+  "purpose": "Executes precision lfu cache procedures for in-memory caching and lru strategies within data engineering and storage systems workflows",
+  "category": "data_engineering_and_storage_systems",
+  "subcategory": "in_memory_caching_and_lru_strategies",
+  "description": "Automates advanced lfu cache operations adhering strictly to deterministic execution contracts. This capability provides verifiable output transformation, deep static and dynamic inspection, and structured failure recovery for lru/lfu cache policies, cache eviction heuristics, memory budget enforcement, and atomic swap invalidation.",
+  "supported_platforms": [
+    "linux",
+    "cross_platform",
+    "windows"
+  ],
+  "activation_conditions": {
+    "intent_patterns": [
+      "run lfu cache on in memory caching and lru strategies",
+      "execute in-memory caching and lru strategies lfu cache engine 32",
+      "analyze lfu cache parameters",
+      "lfu cache data engineering and storage systems"
+    ],
+    "prerequisites": [
+      "Valid input descriptor for lfu cache",
+      "Target environment initialized with sqlite connectivity"
+    ]
+  },
+  "required_inputs": [
+    {
+      "name": "target_payload",
+      "type": "string",
+      "description": "Primary target data or identifier for lfu cache execution",
+      "required": true
+    },
+    {
+      "name": "execution_options",
+      "type": "object",
+      "description": "Deterministic execution flags, timeout settings, and output format constraints",
+      "required": false
+    }
+  ],
+  "expected_outputs": [
+    {
+      "name": "execution_report",
+      "type": "object",
+      "description": "Structured result payload containing telemetry and status for lfu cache"
+    },
+    {
+      "name": "transformed_artifact",
+      "type": "string",
+      "description": "Path or identifier of the generated or transformed output asset"
+    }
+  ],
+  "execution_workflow": [
+    {
+      "step_number": 1,
+      "action": "Validate inputs and verify sqlite pre-conditions",
+      "description": "Assert target payload presence and confirm environment permissions for data_engineering_and_storage_systems",
+      "expected_outcome": "Input payload confirmed valid and environment ready"
+    },
+    {
+      "step_number": 2,
+      "action": "Execute core lfu cache routine",
+      "description": "Dispatch execution envelope to sqlite_query under sqlite runtime boundary",
+      "expected_outcome": "Core operation completed without errors"
+    },
+    {
+      "step_number": 3,
+      "action": "Verify execution integrity and enforce invariants",
+      "description": "Inspect returned artifacts against validation schema and ensure no constraint violations",
+      "expected_outcome": "Invariant checks verified with clean validation status"
+    },
+    {
+      "step_number": 4,
+      "action": "Package structured completion telemetry",
+      "description": "Format output report and serialize state into persistent cache registry",
+      "expected_outcome": "Structured telemetry emitted and state persisted"
+    }
+  ],
+  "decision_logic": {
+    "rules": [
+      {
+        "condition": "Environment sqlite unavailable",
+        "action": "Route task through fallback executor or mock sandbox"
+      },
+      {
+        "condition": "Output constraint validation failure",
+        "action": "Halt pipeline and emit deterministic diagnostic error report"
+      }
+    ],
+    "fallback": "Switch to conservative inspection mode and alert orchestrator"
+  },
+  "tool_requirements": [
+    {
+      "tool_name": "sqlite_query",
+      "server_name": "sqlite",
+      "optional": false
+    }
+  ],
+  "dependencies": {
+    "system_libraries": [
+      "libc.so.6"
+    ],
+    "runtime_packages": [
+      "nexora-core",
+      "jsonschema"
+    ],
+    "skill_dependencies": []
+  },
+  "safety_restrictions": [
+    "Enforce strict read-only boundary when inspecting external untrusted inputs",
+    "Prohibit destructive file operations without prior checksum verification",
+    "Zero-comment output code enforcement on all synthesized assets"
+  ],
+  "validation_criteria": [
+    "Execution output matches expected response schema",
+    "Telemetry status confirms successful lfu cache transformation",
+    "Zero syntax or runtime exceptions encountered"
+  ],
+  "practical_examples": [
+    {
+      "scenario": "Production execution of In-Memory Caching and LRU Strategies Lfu Cache Engine 32",
+      "input": {
+        "target_payload": "payload://in_memory_caching_and_lru_strategies/lfu_cache_sample.dat",
+        "execution_options": {
+          "strict_mode": true,
+          "timeout_seconds": 60
+        }
+      },
+      "expected_output": {
+        "status": "success",
+        "action": "lfu_cache",
+        "verified": true
+      }
+    }
+  ],
+  "related_skills": [
+    "nexora.data_engineering_and_storage_systems.in_memory_caching_and_lru_strategies.fallback_001"
+  ],
+  "version": "1.0.0"
+}

@@ -1,0 +1,138 @@
+{
+  "id": "nexora.game_development_and_virtual_worlds.game_asset_pipeline_and_packaging.texture_atlas_028",
+  "name": "Game Asset Pipeline and Packaging Texture Atlas Engine 28",
+  "purpose": "Executes precision texture atlas procedures for game asset pipeline and packaging within game development and virtual worlds workflows",
+  "category": "game_development_and_virtual_worlds",
+  "subcategory": "game_asset_pipeline_and_packaging",
+  "description": "Automates advanced texture atlas operations adhering strictly to deterministic execution contracts. This capability provides verifiable output transformation, deep static and dynamic inspection, and structured failure recovery for asset bundle compilation, texture atlasing, model export/import pipelines, and sound manifest loading.",
+  "supported_platforms": [
+    "windows",
+    "roblox_studio",
+    "cross_platform"
+  ],
+  "activation_conditions": {
+    "intent_patterns": [
+      "run texture atlas on game asset pipeline and packaging",
+      "execute game asset pipeline and packaging texture atlas engine 28",
+      "analyze texture atlas parameters",
+      "texture atlas game development and virtual worlds"
+    ],
+    "prerequisites": [
+      "Valid input descriptor for texture atlas",
+      "Target environment initialized with Roblox_Studio connectivity"
+    ]
+  },
+  "required_inputs": [
+    {
+      "name": "target_payload",
+      "type": "string",
+      "description": "Primary target data or identifier for texture atlas execution",
+      "required": true
+    },
+    {
+      "name": "execution_options",
+      "type": "object",
+      "description": "Deterministic execution flags, timeout settings, and output format constraints",
+      "required": false
+    }
+  ],
+  "expected_outputs": [
+    {
+      "name": "execution_report",
+      "type": "object",
+      "description": "Structured result payload containing telemetry and status for texture atlas"
+    },
+    {
+      "name": "transformed_artifact",
+      "type": "string",
+      "description": "Path or identifier of the generated or transformed output asset"
+    }
+  ],
+  "execution_workflow": [
+    {
+      "step_number": 1,
+      "action": "Validate inputs and verify Roblox_Studio pre-conditions",
+      "description": "Assert target payload presence and confirm environment permissions for game_development_and_virtual_worlds",
+      "expected_outcome": "Input payload confirmed valid and environment ready"
+    },
+    {
+      "step_number": 2,
+      "action": "Execute core texture atlas routine",
+      "description": "Dispatch execution envelope to execute_luau under Roblox_Studio runtime boundary",
+      "expected_outcome": "Core operation completed without errors"
+    },
+    {
+      "step_number": 3,
+      "action": "Verify execution integrity and enforce invariants",
+      "description": "Inspect returned artifacts against validation schema and ensure no constraint violations",
+      "expected_outcome": "Invariant checks verified with clean validation status"
+    },
+    {
+      "step_number": 4,
+      "action": "Package structured completion telemetry",
+      "description": "Format output report and serialize state into persistent cache registry",
+      "expected_outcome": "Structured telemetry emitted and state persisted"
+    }
+  ],
+  "decision_logic": {
+    "rules": [
+      {
+        "condition": "Environment Roblox_Studio unavailable",
+        "action": "Route task through fallback executor or mock sandbox"
+      },
+      {
+        "condition": "Output constraint validation failure",
+        "action": "Halt pipeline and emit deterministic diagnostic error report"
+      }
+    ],
+    "fallback": "Switch to conservative inspection mode and alert orchestrator"
+  },
+  "tool_requirements": [
+    {
+      "tool_name": "execute_luau",
+      "server_name": "Roblox_Studio",
+      "optional": false
+    }
+  ],
+  "dependencies": {
+    "system_libraries": [
+      "kernel32.dll"
+    ],
+    "runtime_packages": [
+      "nexora-core",
+      "jsonschema"
+    ],
+    "skill_dependencies": []
+  },
+  "safety_restrictions": [
+    "Enforce strict read-only boundary when inspecting external untrusted inputs",
+    "Prohibit destructive file operations without prior checksum verification",
+    "Zero-comment output code enforcement on all synthesized assets"
+  ],
+  "validation_criteria": [
+    "Execution output matches expected response schema",
+    "Telemetry status confirms successful texture atlas transformation",
+    "Zero syntax or runtime exceptions encountered"
+  ],
+  "practical_examples": [
+    {
+      "scenario": "Production execution of Game Asset Pipeline and Packaging Texture Atlas Engine 28",
+      "input": {
+        "target_payload": "payload://game_asset_pipeline_and_packaging/texture_atlas_sample.dat",
+        "execution_options": {
+          "strict_mode": true,
+          "timeout_seconds": 60
+        }
+      },
+      "expected_output": {
+        "status": "success",
+        "action": "texture_atlas",
+        "verified": true
+      }
+    }
+  ],
+  "related_skills": [
+    "nexora.game_development_and_virtual_worlds.game_asset_pipeline_and_packaging.fallback_001"
+  ],
+  "version": "1.0.0"
+}

@@ -1,0 +1,139 @@
+{
+  "id": "nexora.binary_analysis_and_reverse_engineering.binary_patching_and_reassembly.binary_patch_021",
+  "name": "Binary Patching and Reassembly Binary Patch Engine 21",
+  "purpose": "Executes precision binary patch procedures for binary patching and reassembly within binary analysis and reverse engineering workflows",
+  "category": "binary_analysis_and_reverse_engineering",
+  "subcategory": "binary_patching_and_reassembly",
+  "description": "Automates advanced binary patch operations adhering strictly to deterministic execution contracts. This capability provides verifiable output transformation, deep static and dynamic inspection, and structured failure recovery for inline hook insertion, instruction rewriting, binary reassembly, relocation patching, and trampoline generation.",
+  "supported_platforms": [
+    "windows",
+    "linux",
+    "ida_pro",
+    "rea"
+  ],
+  "activation_conditions": {
+    "intent_patterns": [
+      "run binary patch on binary patching and reassembly",
+      "execute binary patching and reassembly binary patch engine 21",
+      "analyze binary patch parameters",
+      "binary patch binary analysis and reverse engineering"
+    ],
+    "prerequisites": [
+      "Valid input descriptor for binary patch",
+      "Target environment initialized with ida-pro connectivity"
+    ]
+  },
+  "required_inputs": [
+    {
+      "name": "target_payload",
+      "type": "string",
+      "description": "Primary target data or identifier for binary patch execution",
+      "required": true
+    },
+    {
+      "name": "execution_options",
+      "type": "object",
+      "description": "Deterministic execution flags, timeout settings, and output format constraints",
+      "required": false
+    }
+  ],
+  "expected_outputs": [
+    {
+      "name": "execution_report",
+      "type": "object",
+      "description": "Structured result payload containing telemetry and status for binary patch"
+    },
+    {
+      "name": "transformed_artifact",
+      "type": "string",
+      "description": "Path or identifier of the generated or transformed output asset"
+    }
+  ],
+  "execution_workflow": [
+    {
+      "step_number": 1,
+      "action": "Validate inputs and verify ida-pro pre-conditions",
+      "description": "Assert target payload presence and confirm environment permissions for binary_analysis_and_reverse_engineering",
+      "expected_outcome": "Input payload confirmed valid and environment ready"
+    },
+    {
+      "step_number": 2,
+      "action": "Execute core binary patch routine",
+      "description": "Dispatch execution envelope to decompile_function under ida-pro runtime boundary",
+      "expected_outcome": "Core operation completed without errors"
+    },
+    {
+      "step_number": 3,
+      "action": "Verify execution integrity and enforce invariants",
+      "description": "Inspect returned artifacts against validation schema and ensure no constraint violations",
+      "expected_outcome": "Invariant checks verified with clean validation status"
+    },
+    {
+      "step_number": 4,
+      "action": "Package structured completion telemetry",
+      "description": "Format output report and serialize state into persistent cache registry",
+      "expected_outcome": "Structured telemetry emitted and state persisted"
+    }
+  ],
+  "decision_logic": {
+    "rules": [
+      {
+        "condition": "Environment ida-pro unavailable",
+        "action": "Route task through fallback executor or mock sandbox"
+      },
+      {
+        "condition": "Output constraint validation failure",
+        "action": "Halt pipeline and emit deterministic diagnostic error report"
+      }
+    ],
+    "fallback": "Switch to conservative inspection mode and alert orchestrator"
+  },
+  "tool_requirements": [
+    {
+      "tool_name": "decompile_function",
+      "server_name": "ida-pro",
+      "optional": false
+    }
+  ],
+  "dependencies": {
+    "system_libraries": [
+      "libc.so.6"
+    ],
+    "runtime_packages": [
+      "nexora-core",
+      "jsonschema"
+    ],
+    "skill_dependencies": []
+  },
+  "safety_restrictions": [
+    "Enforce strict read-only boundary when inspecting external untrusted inputs",
+    "Prohibit destructive file operations without prior checksum verification",
+    "Zero-comment output code enforcement on all synthesized assets"
+  ],
+  "validation_criteria": [
+    "Execution output matches expected response schema",
+    "Telemetry status confirms successful binary patch transformation",
+    "Zero syntax or runtime exceptions encountered"
+  ],
+  "practical_examples": [
+    {
+      "scenario": "Production execution of Binary Patching and Reassembly Binary Patch Engine 21",
+      "input": {
+        "target_payload": "payload://binary_patching_and_reassembly/binary_patch_sample.dat",
+        "execution_options": {
+          "strict_mode": true,
+          "timeout_seconds": 60
+        }
+      },
+      "expected_output": {
+        "status": "success",
+        "action": "binary_patch",
+        "verified": true
+      }
+    }
+  ],
+  "related_skills": [
+    "nexora.binary_analysis_and_reverse_engineering.binary_patching_and_reassembly.fallback_001"
+  ],
+  "version": "1.0.0"
+}

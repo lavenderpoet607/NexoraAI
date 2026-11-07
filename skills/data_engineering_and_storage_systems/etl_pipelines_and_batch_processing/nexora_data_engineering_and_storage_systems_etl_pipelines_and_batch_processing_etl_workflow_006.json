@@ -1,0 +1,138 @@
+{
+  "id": "nexora.data_engineering_and_storage_systems.etl_pipelines_and_batch_processing.etl_workflow_006",
+  "name": "ETL Pipelines and Batch Processing Etl Workflow Engine 6",
+  "purpose": "Executes precision etl workflow procedures for etl pipelines and batch processing within data engineering and storage systems workflows",
+  "category": "data_engineering_and_storage_systems",
+  "subcategory": "etl_pipelines_and_batch_processing",
+  "description": "Automates advanced etl workflow operations adhering strictly to deterministic execution contracts. This capability provides verifiable output transformation, deep static and dynamic inspection, and structured failure recovery for extract-transform-load workflows, batch data chunking, stream processing, and data sanitization routines.",
+  "supported_platforms": [
+    "linux",
+    "cross_platform",
+    "windows"
+  ],
+  "activation_conditions": {
+    "intent_patterns": [
+      "run etl workflow on etl pipelines and batch processing",
+      "execute etl pipelines and batch processing etl workflow engine 6",
+      "analyze etl workflow parameters",
+      "etl workflow data engineering and storage systems"
+    ],
+    "prerequisites": [
+      "Valid input descriptor for etl workflow",
+      "Target environment initialized with sqlite connectivity"
+    ]
+  },
+  "required_inputs": [
+    {
+      "name": "target_payload",
+      "type": "string",
+      "description": "Primary target data or identifier for etl workflow execution",
+      "required": true
+    },
+    {
+      "name": "execution_options",
+      "type": "object",
+      "description": "Deterministic execution flags, timeout settings, and output format constraints",
+      "required": false
+    }
+  ],
+  "expected_outputs": [
+    {
+      "name": "execution_report",
+      "type": "object",
+      "description": "Structured result payload containing telemetry and status for etl workflow"
+    },
+    {
+      "name": "transformed_artifact",
+      "type": "string",
+      "description": "Path or identifier of the generated or transformed output asset"
+    }
+  ],
+  "execution_workflow": [
+    {
+      "step_number": 1,
+      "action": "Validate inputs and verify sqlite pre-conditions",
+      "description": "Assert target payload presence and confirm environment permissions for data_engineering_and_storage_systems",
+      "expected_outcome": "Input payload confirmed valid and environment ready"
+    },
+    {
+      "step_number": 2,
+      "action": "Execute core etl workflow routine",
+      "description": "Dispatch execution envelope to sqlite_query under sqlite runtime boundary",
+      "expected_outcome": "Core operation completed without errors"
+    },
+    {
+      "step_number": 3,
+      "action": "Verify execution integrity and enforce invariants",
+      "description": "Inspect returned artifacts against validation schema and ensure no constraint violations",
+      "expected_outcome": "Invariant checks verified with clean validation status"
+    },
+    {
+      "step_number": 4,
+      "action": "Package structured completion telemetry",
+      "description": "Format output report and serialize state into persistent cache registry",
+      "expected_outcome": "Structured telemetry emitted and state persisted"
+    }
+  ],
+  "decision_logic": {
+    "rules": [
+      {
+        "condition": "Environment sqlite unavailable",
+        "action": "Route task through fallback executor or mock sandbox"
+      },
+      {
+        "condition": "Output constraint validation failure",
+        "action": "Halt pipeline and emit deterministic diagnostic error report"
+      }
+    ],
+    "fallback": "Switch to conservative inspection mode and alert orchestrator"
+  },
+  "tool_requirements": [
+    {
+      "tool_name": "sqlite_query",
+      "server_name": "sqlite",
+      "optional": false
+    }
+  ],
+  "dependencies": {
+    "system_libraries": [
+      "libc.so.6"
+    ],
+    "runtime_packages": [
+      "nexora-core",
+      "jsonschema"
+    ],
+    "skill_dependencies": []
+  },
+  "safety_restrictions": [
+    "Enforce strict read-only boundary when inspecting external untrusted inputs",
+    "Prohibit destructive file operations without prior checksum verification",
+    "Zero-comment output code enforcement on all synthesized assets"
+  ],
+  "validation_criteria": [
+    "Execution output matches expected response schema",
+    "Telemetry status confirms successful etl workflow transformation",
+    "Zero syntax or runtime exceptions encountered"
+  ],
+  "practical_examples": [
+    {
+      "scenario": "Production execution of ETL Pipelines and Batch Processing Etl Workflow Engine 6",
+      "input": {
+        "target_payload": "payload://etl_pipelines_and_batch_processing/etl_workflow_sample.dat",
+        "execution_options": {
+          "strict_mode": true,
+          "timeout_seconds": 60
+        }
+      },
+      "expected_output": {
+        "status": "success",
+        "action": "etl_workflow",
+        "verified": true
+      }
+    }
+  ],
+  "related_skills": [
+    "nexora.data_engineering_and_storage_systems.etl_pipelines_and_batch_processing.fallback_001"
+  ],
+  "version": "1.0.0"
+}

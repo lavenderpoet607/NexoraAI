@@ -1,0 +1,138 @@
+{
+  "id": "nexora.hardware_embedded_and_iot.microcontroller_firmware_analysis.memory_mapped_io_020",
+  "name": "Microcontroller Firmware Analysis Memory Mapped Io Engine 20",
+  "purpose": "Executes precision memory mapped io procedures for microcontroller firmware analysis within hardware embedded and iot workflows",
+  "category": "hardware_embedded_and_iot",
+  "subcategory": "microcontroller_firmware_analysis",
+  "description": "Automates advanced memory mapped io operations adhering strictly to deterministic execution contracts. This capability provides verifiable output transformation, deep static and dynamic inspection, and structured failure recovery for arm cortex-m vector table inspection, register memory mapping, bare-metal binary disassembly, and peripheral base setup.",
+  "supported_platforms": [
+    "embedded",
+    "linux",
+    "cross_platform"
+  ],
+  "activation_conditions": {
+    "intent_patterns": [
+      "run memory mapped io on microcontroller firmware analysis",
+      "execute microcontroller firmware analysis memory mapped io engine 20",
+      "analyze memory mapped io parameters",
+      "memory mapped io hardware embedded and iot"
+    ],
+    "prerequisites": [
+      "Valid input descriptor for memory mapped io",
+      "Target environment initialized with rea connectivity"
+    ]
+  },
+  "required_inputs": [
+    {
+      "name": "target_payload",
+      "type": "string",
+      "description": "Primary target data or identifier for memory mapped io execution",
+      "required": true
+    },
+    {
+      "name": "execution_options",
+      "type": "object",
+      "description": "Deterministic execution flags, timeout settings, and output format constraints",
+      "required": false
+    }
+  ],
+  "expected_outputs": [
+    {
+      "name": "execution_report",
+      "type": "object",
+      "description": "Structured result payload containing telemetry and status for memory mapped io"
+    },
+    {
+      "name": "transformed_artifact",
+      "type": "string",
+      "description": "Path or identifier of the generated or transformed output asset"
+    }
+  ],
+  "execution_workflow": [
+    {
+      "step_number": 1,
+      "action": "Validate inputs and verify rea pre-conditions",
+      "description": "Assert target payload presence and confirm environment permissions for hardware_embedded_and_iot",
+      "expected_outcome": "Input payload confirmed valid and environment ready"
+    },
+    {
+      "step_number": 2,
+      "action": "Execute core memory mapped io routine",
+      "description": "Dispatch execution envelope to inspect_firmware_regions under rea runtime boundary",
+      "expected_outcome": "Core operation completed without errors"
+    },
+    {
+      "step_number": 3,
+      "action": "Verify execution integrity and enforce invariants",
+      "description": "Inspect returned artifacts against validation schema and ensure no constraint violations",
+      "expected_outcome": "Invariant checks verified with clean validation status"
+    },
+    {
+      "step_number": 4,
+      "action": "Package structured completion telemetry",
+      "description": "Format output report and serialize state into persistent cache registry",
+      "expected_outcome": "Structured telemetry emitted and state persisted"
+    }
+  ],
+  "decision_logic": {
+    "rules": [
+      {
+        "condition": "Environment rea unavailable",
+        "action": "Route task through fallback executor or mock sandbox"
+      },
+      {
+        "condition": "Output constraint validation failure",
+        "action": "Halt pipeline and emit deterministic diagnostic error report"
+      }
+    ],
+    "fallback": "Switch to conservative inspection mode and alert orchestrator"
+  },
+  "tool_requirements": [
+    {
+      "tool_name": "inspect_firmware_regions",
+      "server_name": "rea",
+      "optional": false
+    }
+  ],
+  "dependencies": {
+    "system_libraries": [
+      "libc.so.6"
+    ],
+    "runtime_packages": [
+      "nexora-core",
+      "jsonschema"
+    ],
+    "skill_dependencies": []
+  },
+  "safety_restrictions": [
+    "Enforce strict read-only boundary when inspecting external untrusted inputs",
+    "Prohibit destructive file operations without prior checksum verification",
+    "Zero-comment output code enforcement on all synthesized assets"
+  ],
+  "validation_criteria": [
+    "Execution output matches expected response schema",
+    "Telemetry status confirms successful memory mapped io transformation",
+    "Zero syntax or runtime exceptions encountered"
+  ],
+  "practical_examples": [
+    {
+      "scenario": "Production execution of Microcontroller Firmware Analysis Memory Mapped Io Engine 20",
+      "input": {
+        "target_payload": "payload://microcontroller_firmware_analysis/memory_mapped_io_sample.dat",
+        "execution_options": {
+          "strict_mode": true,
+          "timeout_seconds": 60
+        }
+      },
+      "expected_output": {
+        "status": "success",
+        "action": "memory_mapped_io",
+        "verified": true
+      }
+    }
+  ],
+  "related_skills": [
+    "nexora.hardware_embedded_and_iot.microcontroller_firmware_analysis.fallback_001"
+  ],
+  "version": "1.0.0"
+}

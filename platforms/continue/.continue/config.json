@@ -1,0 +1,505 @@
+{
+  "customCommands": [
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-fine_tuning_and_dataset_preparation-dataset_curation_001",
+      "prompt": "Executes precision dataset curation procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows",
+      "description": "Fine-Tuning and Dataset Preparation Dataset Curation Engine 1"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-fine_tuning_and_dataset_preparation-dataset_curation_006",
+      "prompt": "Executes precision dataset curation procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows",
+      "description": "Fine-Tuning and Dataset Preparation Dataset Curation Engine 6"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-fine_tuning_and_dataset_preparation-dataset_curation_011",
+      "prompt": "Executes precision dataset curation procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows",
+      "description": "Fine-Tuning and Dataset Preparation Dataset Curation Engine 11"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-fine_tuning_and_dataset_preparation-dataset_curation_016",
+      "prompt": "Executes precision dataset curation procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows",
+      "description": "Fine-Tuning and Dataset Preparation Dataset Curation Engine 16"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-fine_tuning_and_dataset_preparation-dataset_curation_021",
+      "prompt": "Executes precision dataset curation procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows",
+      "description": "Fine-Tuning and Dataset Preparation Dataset Curation Engine 21"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-fine_tuning_and_dataset_preparation-dataset_curation_026",
+      "prompt": "Executes precision dataset curation procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows",
+      "description": "Fine-Tuning and Dataset Preparation Dataset Curation Engine 26"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-fine_tuning_and_dataset_preparation-dataset_curation_031",
+      "prompt": "Executes precision dataset curation procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows",
+      "description": "Fine-Tuning and Dataset Preparation Dataset Curation Engine 31"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-fine_tuning_and_dataset_preparation-instruction_tuning_003",
+      "prompt": "Executes precision instruction tuning procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows",
+      "description": "Fine-Tuning and Dataset Preparation Instruction Tuning Engine 3"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-fine_tuning_and_dataset_preparation-instruction_tuning_008",
+      "prompt": "Executes precision instruction tuning procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows",
+      "description": "Fine-Tuning and Dataset Preparation Instruction Tuning Engine 8"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-fine_tuning_and_dataset_preparation-instruction_tuning_013",
+      "prompt": "Executes precision instruction tuning procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows",
+      "description": "Fine-Tuning and Dataset Preparation Instruction Tuning Engine 13"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-fine_tuning_and_dataset_preparation-instruction_tuning_018",
+      "prompt": "Executes precision instruction tuning procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows",
+      "description": "Fine-Tuning and Dataset Preparation Instruction Tuning Engine 18"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-fine_tuning_and_dataset_preparation-instruction_tuning_023",
+      "prompt": "Executes precision instruction tuning procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows",
+      "description": "Fine-Tuning and Dataset Preparation Instruction Tuning Engine 23"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-fine_tuning_and_dataset_preparation-instruction_tuning_028",
+      "prompt": "Executes precision instruction tuning procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows",
+      "description": "Fine-Tuning and Dataset Preparation Instruction Tuning Engine 28"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-fine_tuning_and_dataset_preparation-instruction_tuning_033",
+      "prompt": "Executes precision instruction tuning procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows",
+      "description": "Fine-Tuning and Dataset Preparation Instruction Tuning Engine 33"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-fine_tuning_and_dataset_preparation-lora_config_005",
+      "prompt": "Executes precision lora config procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows",
+      "description": "Fine-Tuning and Dataset Preparation Lora Config Engine 5"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-fine_tuning_and_dataset_preparation-lora_config_010",
+      "prompt": "Executes precision lora config procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows",
+      "description": "Fine-Tuning and Dataset Preparation Lora Config Engine 10"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-fine_tuning_and_dataset_preparation-lora_config_015",
+      "prompt": "Executes precision lora config procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows",
+      "description": "Fine-Tuning and Dataset Preparation Lora Config Engine 15"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-fine_tuning_and_dataset_preparation-lora_config_020",
+      "prompt": "Executes precision lora config procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows",
+      "description": "Fine-Tuning and Dataset Preparation Lora Config Engine 20"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-fine_tuning_and_dataset_preparation-lora_config_025",
+      "prompt": "Executes precision lora config procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows",
+      "description": "Fine-Tuning and Dataset Preparation Lora Config Engine 25"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-fine_tuning_and_dataset_preparation-lora_config_030",
+      "prompt": "Executes precision lora config procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows",
+      "description": "Fine-Tuning and Dataset Preparation Lora Config Engine 30"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-fine_tuning_and_dataset_preparation-lora_config_035",
+      "prompt": "Executes precision lora config procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows",
+      "description": "Fine-Tuning and Dataset Preparation Lora Config Engine 35"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-fine_tuning_and_dataset_preparation-synthetic_data_004",
+      "prompt": "Executes precision synthetic data procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows",
+      "description": "Fine-Tuning and Dataset Preparation Synthetic Data Engine 4"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-fine_tuning_and_dataset_preparation-synthetic_data_009",
+      "prompt": "Executes precision synthetic data procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows",
+      "description": "Fine-Tuning and Dataset Preparation Synthetic Data Engine 9"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-fine_tuning_and_dataset_preparation-synthetic_data_014",
+      "prompt": "Executes precision synthetic data procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows",
+      "description": "Fine-Tuning and Dataset Preparation Synthetic Data Engine 14"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-fine_tuning_and_dataset_preparation-synthetic_data_019",
+      "prompt": "Executes precision synthetic data procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows",
+      "description": "Fine-Tuning and Dataset Preparation Synthetic Data Engine 19"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-fine_tuning_and_dataset_preparation-synthetic_data_024",
+      "prompt": "Executes precision synthetic data procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows",
+      "description": "Fine-Tuning and Dataset Preparation Synthetic Data Engine 24"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-fine_tuning_and_dataset_preparation-synthetic_data_029",
+      "prompt": "Executes precision synthetic data procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows",
+      "description": "Fine-Tuning and Dataset Preparation Synthetic Data Engine 29"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-fine_tuning_and_dataset_preparation-synthetic_data_034",
+      "prompt": "Executes precision synthetic data procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows",
+      "description": "Fine-Tuning and Dataset Preparation Synthetic Data Engine 34"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-fine_tuning_and_dataset_preparation-tokenization_002",
+      "prompt": "Executes precision tokenization procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows",
+      "description": "Fine-Tuning and Dataset Preparation Tokenization Engine 2"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-fine_tuning_and_dataset_preparation-tokenization_007",
+      "prompt": "Executes precision tokenization procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows",
+      "description": "Fine-Tuning and Dataset Preparation Tokenization Engine 7"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-fine_tuning_and_dataset_preparation-tokenization_012",
+      "prompt": "Executes precision tokenization procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows",
+      "description": "Fine-Tuning and Dataset Preparation Tokenization Engine 12"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-fine_tuning_and_dataset_preparation-tokenization_017",
+      "prompt": "Executes precision tokenization procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows",
+      "description": "Fine-Tuning and Dataset Preparation Tokenization Engine 17"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-fine_tuning_and_dataset_preparation-tokenization_022",
+      "prompt": "Executes precision tokenization procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows",
+      "description": "Fine-Tuning and Dataset Preparation Tokenization Engine 22"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-fine_tuning_and_dataset_preparation-tokenization_027",
+      "prompt": "Executes precision tokenization procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows",
+      "description": "Fine-Tuning and Dataset Preparation Tokenization Engine 27"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-fine_tuning_and_dataset_preparation-tokenization_032",
+      "prompt": "Executes precision tokenization procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows",
+      "description": "Fine-Tuning and Dataset Preparation Tokenization Engine 32"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-cot_routing_005",
+      "prompt": "Executes precision cot routing procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Cot Routing Engine 5"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-cot_routing_010",
+      "prompt": "Executes precision cot routing procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Cot Routing Engine 10"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-cot_routing_015",
+      "prompt": "Executes precision cot routing procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Cot Routing Engine 15"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-cot_routing_020",
+      "prompt": "Executes precision cot routing procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Cot Routing Engine 20"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-cot_routing_025",
+      "prompt": "Executes precision cot routing procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Cot Routing Engine 25"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-cot_routing_030",
+      "prompt": "Executes precision cot routing procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Cot Routing Engine 30"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-cot_routing_035",
+      "prompt": "Executes precision cot routing procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Cot Routing Engine 35"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-cot_routing_040",
+      "prompt": "Executes precision cot routing procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Cot Routing Engine 40"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-cot_routing_045",
+      "prompt": "Executes precision cot routing procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Cot Routing Engine 45"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-few_shot_injection_002",
+      "prompt": "Executes precision few shot injection procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Few Shot Injection Engine 2"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-few_shot_injection_007",
+      "prompt": "Executes precision few shot injection procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Few Shot Injection Engine 7"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-few_shot_injection_012",
+      "prompt": "Executes precision few shot injection procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Few Shot Injection Engine 12"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-few_shot_injection_017",
+      "prompt": "Executes precision few shot injection procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Few Shot Injection Engine 17"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-few_shot_injection_022",
+      "prompt": "Executes precision few shot injection procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Few Shot Injection Engine 22"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-few_shot_injection_027",
+      "prompt": "Executes precision few shot injection procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Few Shot Injection Engine 27"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-few_shot_injection_032",
+      "prompt": "Executes precision few shot injection procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Few Shot Injection Engine 32"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-few_shot_injection_037",
+      "prompt": "Executes precision few shot injection procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Few Shot Injection Engine 37"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-few_shot_injection_042",
+      "prompt": "Executes precision few shot injection procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Few Shot Injection Engine 42"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-prompt_chaining_001",
+      "prompt": "Executes precision prompt chaining procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Prompt Chaining Engine 1"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-prompt_chaining_006",
+      "prompt": "Executes precision prompt chaining procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Prompt Chaining Engine 6"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-prompt_chaining_011",
+      "prompt": "Executes precision prompt chaining procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Prompt Chaining Engine 11"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-prompt_chaining_016",
+      "prompt": "Executes precision prompt chaining procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Prompt Chaining Engine 16"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-prompt_chaining_021",
+      "prompt": "Executes precision prompt chaining procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Prompt Chaining Engine 21"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-prompt_chaining_026",
+      "prompt": "Executes precision prompt chaining procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Prompt Chaining Engine 26"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-prompt_chaining_031",
+      "prompt": "Executes precision prompt chaining procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Prompt Chaining Engine 31"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-prompt_chaining_036",
+      "prompt": "Executes precision prompt chaining procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Prompt Chaining Engine 36"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-prompt_chaining_041",
+      "prompt": "Executes precision prompt chaining procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Prompt Chaining Engine 41"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-schema_prompting_004",
+      "prompt": "Executes precision schema prompting procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Schema Prompting Engine 4"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-schema_prompting_009",
+      "prompt": "Executes precision schema prompting procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Schema Prompting Engine 9"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-schema_prompting_014",
+      "prompt": "Executes precision schema prompting procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Schema Prompting Engine 14"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-schema_prompting_019",
+      "prompt": "Executes precision schema prompting procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Schema Prompting Engine 19"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-schema_prompting_024",
+      "prompt": "Executes precision schema prompting procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Schema Prompting Engine 24"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-schema_prompting_029",
+      "prompt": "Executes precision schema prompting procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Schema Prompting Engine 29"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-schema_prompting_034",
+      "prompt": "Executes precision schema prompting procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Schema Prompting Engine 34"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-schema_prompting_039",
+      "prompt": "Executes precision schema prompting procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Schema Prompting Engine 39"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-schema_prompting_044",
+      "prompt": "Executes precision schema prompting procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Schema Prompting Engine 44"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-token_budgeting_003",
+      "prompt": "Executes precision token budgeting procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Token Budgeting Engine 3"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-token_budgeting_008",
+      "prompt": "Executes precision token budgeting procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Token Budgeting Engine 8"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-token_budgeting_013",
+      "prompt": "Executes precision token budgeting procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Token Budgeting Engine 13"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-token_budgeting_018",
+      "prompt": "Executes precision token budgeting procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Token Budgeting Engine 18"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-token_budgeting_023",
+      "prompt": "Executes precision token budgeting procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Token Budgeting Engine 23"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-token_budgeting_028",
+      "prompt": "Executes precision token budgeting procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Token Budgeting Engine 28"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-token_budgeting_033",
+      "prompt": "Executes precision token budgeting procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Token Budgeting Engine 33"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-token_budgeting_038",
+      "prompt": "Executes precision token budgeting procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Token Budgeting Engine 38"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-llm_prompt_engineering_and_chaining-token_budgeting_043",
+      "prompt": "Executes precision token budgeting procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows",
+      "description": "LLM Prompt Engineering and Chaining Token Budgeting Engine 43"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-model_evaluation_and_benchmarking-accuracy_metrics_003",
+      "prompt": "Executes precision accuracy metrics procedures for model evaluation and benchmarking within ai ml and cognitive orchestration workflows",
+      "description": "Model Evaluation and Benchmarking Accuracy Metrics Engine 3"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-model_evaluation_and_benchmarking-accuracy_metrics_008",
+      "prompt": "Executes precision accuracy metrics procedures for model evaluation and benchmarking within ai ml and cognitive orchestration workflows",
+      "description": "Model Evaluation and Benchmarking Accuracy Metrics Engine 8"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-model_evaluation_and_benchmarking-accuracy_metrics_013",
+      "prompt": "Executes precision accuracy metrics procedures for model evaluation and benchmarking within ai ml and cognitive orchestration workflows",
+      "description": "Model Evaluation and Benchmarking Accuracy Metrics Engine 13"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-model_evaluation_and_benchmarking-accuracy_metrics_018",
+      "prompt": "Executes precision accuracy metrics procedures for model evaluation and benchmarking within ai ml and cognitive orchestration workflows",
+      "description": "Model Evaluation and Benchmarking Accuracy Metrics Engine 18"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-model_evaluation_and_benchmarking-accuracy_metrics_023",
+      "prompt": "Executes precision accuracy metrics procedures for model evaluation and benchmarking within ai ml and cognitive orchestration workflows",
+      "description": "Model Evaluation and Benchmarking Accuracy Metrics Engine 23"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-model_evaluation_and_benchmarking-accuracy_metrics_028",
+      "prompt": "Executes precision accuracy metrics procedures for model evaluation and benchmarking within ai ml and cognitive orchestration workflows",
+      "description": "Model Evaluation and Benchmarking Accuracy Metrics Engine 28"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-model_evaluation_and_benchmarking-benchmark_eval_001",
+      "prompt": "Executes precision benchmark eval procedures for model evaluation and benchmarking within ai ml and cognitive orchestration workflows",
+      "description": "Model Evaluation and Benchmarking Benchmark Eval Engine 1"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-model_evaluation_and_benchmarking-benchmark_eval_006",
+      "prompt": "Executes precision benchmark eval procedures for model evaluation and benchmarking within ai ml and cognitive orchestration workflows",
+      "description": "Model Evaluation and Benchmarking Benchmark Eval Engine 6"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-model_evaluation_and_benchmarking-benchmark_eval_011",
+      "prompt": "Executes precision benchmark eval procedures for model evaluation and benchmarking within ai ml and cognitive orchestration workflows",
+      "description": "Model Evaluation and Benchmarking Benchmark Eval Engine 11"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-model_evaluation_and_benchmarking-benchmark_eval_016",
+      "prompt": "Executes precision benchmark eval procedures for model evaluation and benchmarking within ai ml and cognitive orchestration workflows",
+      "description": "Model Evaluation and Benchmarking Benchmark Eval Engine 16"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-model_evaluation_and_benchmarking-benchmark_eval_021",
+      "prompt": "Executes precision benchmark eval procedures for model evaluation and benchmarking within ai ml and cognitive orchestration workflows",
+      "description": "Model Evaluation and Benchmarking Benchmark Eval Engine 21"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-model_evaluation_and_benchmarking-benchmark_eval_026",
+      "prompt": "Executes precision benchmark eval procedures for model evaluation and benchmarking within ai ml and cognitive orchestration workflows",
+      "description": "Model Evaluation and Benchmarking Benchmark Eval Engine 26"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-model_evaluation_and_benchmarking-bleu_rouge_005",
+      "prompt": "Executes precision bleu rouge procedures for model evaluation and benchmarking within ai ml and cognitive orchestration workflows",
+      "description": "Model Evaluation and Benchmarking Bleu Rouge Engine 5"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-model_evaluation_and_benchmarking-bleu_rouge_010",
+      "prompt": "Executes precision bleu rouge procedures for model evaluation and benchmarking within ai ml and cognitive orchestration workflows",
+      "description": "Model Evaluation and Benchmarking Bleu Rouge Engine 10"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-model_evaluation_and_benchmarking-bleu_rouge_015",
+      "prompt": "Executes precision bleu rouge procedures for model evaluation and benchmarking within ai ml and cognitive orchestration workflows",
+      "description": "Model Evaluation and Benchmarking Bleu Rouge Engine 15"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-model_evaluation_and_benchmarking-bleu_rouge_020",
+      "prompt": "Executes precision bleu rouge procedures for model evaluation and benchmarking within ai ml and cognitive orchestration workflows",
+      "description": "Model Evaluation and Benchmarking Bleu Rouge Engine 20"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-model_evaluation_and_benchmarking-bleu_rouge_025",
+      "prompt": "Executes precision bleu rouge procedures for model evaluation and benchmarking within ai ml and cognitive orchestration workflows",
+      "description": "Model Evaluation and Benchmarking Bleu Rouge Engine 25"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-model_evaluation_and_benchmarking-bleu_rouge_030",
+      "prompt": "Executes precision bleu rouge procedures for model evaluation and benchmarking within ai ml and cognitive orchestration workflows",
+      "description": "Model Evaluation and Benchmarking Bleu Rouge Engine 30"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-model_evaluation_and_benchmarking-eval_harness_004",
+      "prompt": "Executes precision eval harness procedures for model evaluation and benchmarking within ai ml and cognitive orchestration workflows",
+      "description": "Model Evaluation and Benchmarking Eval Harness Engine 4"
+    },
+    {
+      "name": "nexora-ai_ml_and_cognitive_orchestration-model_evaluation_and_benchmarking-eval_harness_009",
+      "prompt": "Executes precision eval harness procedures for model evaluation and benchmarking within ai ml and cognitive orchestration workflows",
+      "description": "Model Evaluation and Benchmarking Eval Harness Engine 9"
+    }
+  ],
+  "systemMessage": "Fine-Tuning and Dataset Preparation Dataset Curation Engine 1: Executes precision dataset curation procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows\nFine-Tuning and Dataset Preparation Dataset Curation Engine 6: Executes precision dataset curation procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows\nFine-Tuning and Dataset Preparation Dataset Curation Engine 11: Executes precision dataset curation procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows\nFine-Tuning and Dataset Preparation Dataset Curation Engine 16: Executes precision dataset curation procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows\nFine-Tuning and Dataset Preparation Dataset Curation Engine 21: Executes precision dataset curation procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows\nFine-Tuning and Dataset Preparation Dataset Curation Engine 26: Executes precision dataset curation procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows\nFine-Tuning and Dataset Preparation Dataset Curation Engine 31: Executes precision dataset curation procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows\nFine-Tuning and Dataset Preparation Instruction Tuning Engine 3: Executes precision instruction tuning procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows\nFine-Tuning and Dataset Preparation Instruction Tuning Engine 8: Executes precision instruction tuning procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows\nFine-Tuning and Dataset Preparation Instruction Tuning Engine 13: Executes precision instruction tuning procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows\nFine-Tuning and Dataset Preparation Instruction Tuning Engine 18: Executes precision instruction tuning procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows\nFine-Tuning and Dataset Preparation Instruction Tuning Engine 23: Executes precision instruction tuning procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows\nFine-Tuning and Dataset Preparation Instruction Tuning Engine 28: Executes precision instruction tuning procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows\nFine-Tuning and Dataset Preparation Instruction Tuning Engine 33: Executes precision instruction tuning procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows\nFine-Tuning and Dataset Preparation Lora Config Engine 5: Executes precision lora config procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows\nFine-Tuning and Dataset Preparation Lora Config Engine 10: Executes precision lora config procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows\nFine-Tuning and Dataset Preparation Lora Config Engine 15: Executes precision lora config procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows\nFine-Tuning and Dataset Preparation Lora Config Engine 20: Executes precision lora config procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows\nFine-Tuning and Dataset Preparation Lora Config Engine 25: Executes precision lora config procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows\nFine-Tuning and Dataset Preparation Lora Config Engine 30: Executes precision lora config procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows\nFine-Tuning and Dataset Preparation Lora Config Engine 35: Executes precision lora config procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows\nFine-Tuning and Dataset Preparation Synthetic Data Engine 4: Executes precision synthetic data procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows\nFine-Tuning and Dataset Preparation Synthetic Data Engine 9: Executes precision synthetic data procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows\nFine-Tuning and Dataset Preparation Synthetic Data Engine 14: Executes precision synthetic data procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows\nFine-Tuning and Dataset Preparation Synthetic Data Engine 19: Executes precision synthetic data procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows\nFine-Tuning and Dataset Preparation Synthetic Data Engine 24: Executes precision synthetic data procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows\nFine-Tuning and Dataset Preparation Synthetic Data Engine 29: Executes precision synthetic data procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows\nFine-Tuning and Dataset Preparation Synthetic Data Engine 34: Executes precision synthetic data procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows\nFine-Tuning and Dataset Preparation Tokenization Engine 2: Executes precision tokenization procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows\nFine-Tuning and Dataset Preparation Tokenization Engine 7: Executes precision tokenization procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows\nFine-Tuning and Dataset Preparation Tokenization Engine 12: Executes precision tokenization procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows\nFine-Tuning and Dataset Preparation Tokenization Engine 17: Executes precision tokenization procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows\nFine-Tuning and Dataset Preparation Tokenization Engine 22: Executes precision tokenization procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows\nFine-Tuning and Dataset Preparation Tokenization Engine 27: Executes precision tokenization procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows\nFine-Tuning and Dataset Preparation Tokenization Engine 32: Executes precision tokenization procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows\nLLM Prompt Engineering and Chaining Cot Routing Engine 5: Executes precision cot routing procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows\nLLM Prompt Engineering and Chaining Cot Routing Engine 10: Executes precision cot routing procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows\nLLM Prompt Engineering and Chaining Cot Routing Engine 15: Executes precision cot routing procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows\nLLM Prompt Engineering and Chaining Cot Routing Engine 20: Executes precision cot routing procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows\nLLM Prompt Engineering and Chaining Cot Routing Engine 25: Executes precision cot routing procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows\nLLM Prompt Engineering and Chaining Cot Routing Engine 30: Executes precision cot routing procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows\nLLM Prompt Engineering and Chaining Cot Routing Engine 35: Executes precision cot routing procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows\nLLM Prompt Engineering and Chaining Cot Routing Engine 40: Executes precision cot routing procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows\nLLM Prompt Engineering and Chaining Cot Routing Engine 45: Executes precision cot routing procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows\nLLM Prompt Engineering and Chaining Few Shot Injection Engine 2: Executes precision few shot injection procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows\nLLM Prompt Engineering and Chaining Few Shot Injection Engine 7: Executes precision few shot injection procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows\nLLM Prompt Engineering and Chaining Few Shot Injection Engine 12: Executes precision few shot injection procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows\nLLM Prompt Engineering and Chaining Few Shot Injection Engine 17: Executes precision few shot injection procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows\nLLM Prompt Engineering and Chaining Few Shot Injection Engine 22: Executes precision few shot injection procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows\nLLM Prompt Engineering and Chaining Few Shot Injection Engine 27: Executes precision few shot injection procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows"
+}

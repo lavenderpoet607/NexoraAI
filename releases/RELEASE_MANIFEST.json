@@ -1,0 +1,23 @@
+{
+  "release_version": "1.0.0",
+  "release_name": "Nexora AI Universal Skills Ecosystem",
+  "timestamp": "2026-11-07T17:57:51Z",
+  "total_skills": 3000,
+  "artifacts": [
+    {
+      "file": "nexora_skill_catalog_v1.0.0.json",
+      "sha256": "179a94d60e88ad6b52ad9c0b0a8ce8f7bbbe793c4379b1b3b5a66aa34f574f11",
+      "description": "Minified universal skill catalog index"
+    },
+    {
+      "file": "nexora_skills_bundle_v1.0.0.zip",
+      "sha256": "456fe47ca84310eba32a6b1a1c86828986ad018632ab923f14c371f97825df0d",
+      "description": "Complete bundle of 3,000 canonical skill JSON files"
+    },
+    {
+      "file": "nexora_registry.db",
+      "sha256": "d3c8a0b466d0b9471258eeff438e144c854b6296d7406f8ecd07e5afa5a504af",
+      "description": "Pre-built SQLite database with FTS5 virtual table"
+    }
+  ]
+}

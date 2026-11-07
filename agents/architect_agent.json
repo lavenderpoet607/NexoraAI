@@ -1,0 +1,313 @@
+{
+  "agent_id": "architect_agent",
+  "name": "Nexora Architect Agent",
+  "system_role": "System Architecture and Subagent Delegation Orchestrator",
+  "version": "1.0.0",
+  "operational_mode": "deterministic_governance",
+  "authority_level": "root_architect",
+  "responsibilities": [
+    "Design and govern universal JSON skill schemas conforming to JSON Schema Draft-07",
+    "Define, partition, and maintain taxonomy matrix across 16 major technical domains",
+    "Architect three-tier storage model encompassing in-memory cache, SQLite FTS5 index, and JSON repository",
+    "Design and supervise high-throughput task routing engine and dynamic skill dispatcher",
+    "Orchestrate subagent delegation protocols, lifecycle transitions, and inter-agent communication envelopes",
+    "Enforce strict architectural integrity rules including zero-comment policy across all artifacts"
+  ],
+  "architectural_specification": {
+    "universal_schema_standard": {
+      "draft_version": "draft-07",
+      "required_field_count": 19,
+      "mandatory_fields": [
+        "id",
+        "name",
+        "purpose",
+        "category",
+        "subcategory",
+        "description",
+        "supported_platforms",
+        "activation_conditions",
+        "required_inputs",
+        "expected_outputs",
+        "execution_workflow",
+        "decision_logic",
+        "tool_requirements",
+        "dependencies",
+        "safety_restrictions",
+        "validation_criteria",
+        "practical_examples",
+        "related_skills",
+        "version"
+      ],
+      "immutability_rule": "Skill IDs and major version interfaces must remain backward compatible once registered",
+      "zero_comment_mandate": "Strict prohibition of comments in all generated JSON, Python, and code files"
+    },
+    "taxonomy_framework": {
+      "total_skill_capacity": 3000,
+      "category_count": 16,
+      "subcategory_count": 88,
+      "storage_path": "categories/taxonomy_matrix.json",
+      "partition_strategy": "domain_hierarchical_isolation"
+    },
+    "storage_tier_architecture": {
+      "tier_1_hot_memory_cache": {
+        "engine": "lru_lfu_hybrid_cache",
+        "max_hot_skills": 500,
+        "default_ttl_seconds": 3600,
+        "write_policy": "write_through"
+      },
+      "tier_2_relational_and_fulltext_index": {
+        "engine": "sqlite_fts5",
+        "database_file": "data/nexora_catalog.db",
+        "table_name": "skills_fts",
+        "ranking_function": "bm25",
+        "tokenizer": "porter unicode61",
+        "indexed_fields": [
+          "id",
+          "name",
+          "purpose",
+          "category",
+          "subcategory",
+          "description",
+          "capability_tokens"
+        ]
+      },
+      "tier_3_file_repository": {
+        "format": "json_draft_07",
+        "base_directory": "skills",
+        "partitioning": "category/subcategory/skill_id.json",
+        "atomic_writes": true,
+        "compression": "none"
+      }
+    },
+    "routing_engine_specification": {
+      "intent_parser": "semantic_regex_and_token_normalizer",
+      "dispatch_algorithm": "two_stage_filter_and_rank",
+      "primary_filter": "platform_and_context_compatibility",
+      "secondary_ranker": "fts5_bm25_with_heuristic_priority_weighting",
+      "fallback_policy": "delegate_to_autonomous_agent_orchestration"
+    },
+    "smart_cache_specification": {
+      "strategy": "adaptive_working_set",
+      "prewarming_enabled": true,
+      "eviction_algorithm": "segmented_lru",
+      "dirty_flush_interval_ms": 1000
+    },
+    "platform_adapters": {
+      "supported_mcp_servers": [
+        "Roblox_Studio",
+        "blender",
+        "ida-pro",
+        "rea",
+        "stitch"
+      ],
+      "communication_protocol": "model_context_protocol",
+      "error_isolation": "process_sandbox_boundary"
+    }
+  },
+  "subagent_delegation_model": {
+    "topology": "hub_and_spoke_hierarchical_orchestration",
+    "primary_coordinator": "architect_agent",
+    "envelope_schema": {
+      "message_id": "uuid_v4",
+      "timestamp": "iso8601_utc",
+      "sender_id": "string",
+      "recipient_id": "string",
+      "task_id": "string",
+      "intent": "string",
+      "payload": "object",
+      "priority": "HIGH | MEDIUM | LOW",
+      "correlation_id": "string",
+      "status": "planned | dispatched | in_progress | awaiting_feedback | completed | failed | fallback_triggered"
+    },
+    "lifecycle_states": [
+      {
+        "state": "planned",
+        "description": "Task created by coordinator with full input specifications and acceptance criteria"
+      },
+      {
+        "state": "dispatched",
+        "description": "Task envelope transmitted to targeted subagent inbox"
+      },
+      {
+        "state": "in_progress",
+        "description": "Subagent has acknowledged task and is currently executing workflow steps"
+      },
+      {
+        "state": "awaiting_feedback",
+        "description": "Subagent requires human or coordinator review before applying changes"
+      },
+      {
+        "state": "completed",
+        "description": "Task finished successfully with verified outputs and structured completion report"
+      },
+      {
+        "state": "failed",
+        "description": "Task execution encountered non-recoverable error during processing"
+      },
+      {
+        "state": "fallback_triggered",
+        "description": "Primary subagent execution failed; automatic fallback subagent activated"
+      }
+    ],
+    "subagents": [
+      {
+        "agent_id": "architect_agent",
+        "name": "System Architect Subagent",
+        "domain": "governance_and_schema_design",
+        "capabilities": [
+          "universal_schema_design",
+          "taxonomy_matrix_balancing",
+          "architectural_validation",
+          "subagent_delegation_orchestration"
+        ],
+        "concurrency_limit": 1
+      },
+      {
+        "agent_id": "taxonomy_curator_agent",
+        "name": "Taxonomy Curator Subagent",
+        "domain": "taxonomy_and_ingestion",
+        "capabilities": [
+          "skill_quota_monitoring",
+          "category_tree_maintenance",
+          "metadata_indexing_sync"
+        ],
+        "concurrency_limit": 4
+      },
+      {
+        "agent_id": "binary_reverse_engineering_agent",
+        "name": "Binary Reverse Engineering Subagent",
+        "domain": "binary_analysis_and_reverse_engineering",
+        "capabilities": [
+          "ida_pro_automation",
+          "rea_inspection",
+          "decompilation_analysis",
+          "binary_patching_plans"
+        ],
+        "concurrency_limit": 4
+      },
+      {
+        "agent_id": "mobile_app_sec_agent",
+        "name": "Mobile Application Security Subagent",
+        "domain": "mobile_security_and_app_analysis",
+        "capabilities": [
+          "adb_device_orchestration",
+          "frida_dynamic_hooking",
+          "apk_smali_disassembly"
+        ],
+        "concurrency_limit": 4
+      },
+      {
+        "agent_id": "game_world_developer_agent",
+        "name": "Game World Developer Subagent",
+        "domain": "game_development_and_virtual_worlds",
+        "capabilities": [
+          "roblox_studio_scripting",
+          "luau_code_synthesis",
+          "game_tree_navigation",
+          "avatar_and_physics_setup"
+        ],
+        "concurrency_limit": 4
+      },
+      {
+        "agent_id": "three_d_media_agent",
+        "name": "3D Graphics and Animation Subagent",
+        "domain": "three_dimensional_graphics_and_animation",
+        "capabilities": [
+          "blender_mesh_generation",
+          "shader_node_graphing",
+          "skeletal_armature_rigging",
+          "camera_animation_sequencing"
+        ],
+        "concurrency_limit": 2
+      },
+      {
+        "agent_id": "cybersecurity_analyst_agent",
+        "name": "Cybersecurity Analyst Subagent",
+        "domain": "cybersecurity_and_penetration_testing",
+        "capabilities": [
+          "pcap_stream_dissection",
+          "vulnerability_heuristics",
+          "malware_sandbox_profiling"
+        ],
+        "concurrency_limit": 4
+      },
+      {
+        "agent_id": "code_synthesis_engineer_agent",
+        "name": "Code Synthesis Engineer Subagent",
+        "domain": "software_engineering_and_architecture",
+        "capabilities": [
+          "ast_code_rewriting",
+          "clean_architecture_synthesis",
+          "unit_test_harness_generation"
+        ],
+        "concurrency_limit": 8
+      },
+      {
+        "agent_id": "storage_indexing_agent",
+        "name": "Storage and Indexing Subagent",
+        "domain": "data_engineering_and_storage_systems",
+        "capabilities": [
+          "sqlite_fts5_indexing",
+          "catalog_database_maintenance",
+          "smart_cache_flush_and_sync"
+        ],
+        "concurrency_limit": 2
+      },
+      {
+        "agent_id": "verification_qa_agent",
+        "name": "Verification and QA Subagent",
+        "domain": "security_governance_and_compliance",
+        "capabilities": [
+          "json_schema_validation",
+          "zero_comment_compliance_verification",
+          "deterministic_output_testing"
+        ],
+        "concurrency_limit": 4
+      }
+    ],
+    "delegation_workflow": [
+      {
+        "stage": 1,
+        "name": "Task Intake and Semantic Parsing",
+        "actor": "architect_agent",
+        "action": "Parse incoming user request, normalize intent tokens, identify target domains"
+      },
+      {
+        "stage": 2,
+        "name": "Skill and Subagent Resolution",
+        "actor": "architect_agent",
+        "action": "Query SQLite FTS5 index and match relevant skills and target subagent capabilities"
+      },
+      {
+        "stage": 3,
+        "name": "Task Envelope Construction and Dispatch",
+        "actor": "architect_agent",
+        "action": "Serialize task envelope with parameters, boundary constraints, and send to recipient inbox"
+      },
+      {
+        "stage": 4,
+        "name": "Subagent Execution and Tool Invocation",
+        "actor": "designated_subagent",
+        "action": "Execute skill workflow steps, call corresponding MCP tools, monitor progress"
+      },
+      {
+        "stage": 5,
+        "name": "Output Verification and Schema Validation",
+        "actor": "verification_qa_agent",
+        "action": "Verify execution output against schema validation criteria and zero-comment rules"
+      },
+      {
+        "stage": 6,
+        "name": "Structured Completion Reporting",
+        "actor": "designated_subagent",
+        "action": "Send structured completion report back to architect coordinator"
+      }
+    ],
+    "fallback_and_recovery_policies": {
+      "max_retry_attempts": 3,
+      "exponential_backoff_factor": 1.5,
+      "escalation_target": "architect_agent",
+      "isolation_action": "isolate_failing_subagent_and_route_to_alternate"
+    }
+  }
+}

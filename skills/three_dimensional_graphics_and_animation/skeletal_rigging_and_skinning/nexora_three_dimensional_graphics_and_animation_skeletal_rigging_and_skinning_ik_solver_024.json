@@ -1,0 +1,139 @@
+{
+  "id": "nexora.three_dimensional_graphics_and_animation.skeletal_rigging_and_skinning.ik_solver_024",
+  "name": "Skeletal Rigging and Skinning Ik Solver Engine 24",
+  "purpose": "Executes precision ik solver procedures for skeletal rigging and skinning within three dimensional graphics and animation workflows",
+  "category": "three_dimensional_graphics_and_animation",
+  "subcategory": "skeletal_rigging_and_skinning",
+  "description": "Automates advanced ik solver operations adhering strictly to deterministic execution contracts. This capability provides verifiable output transformation, deep static and dynamic inspection, and structured failure recovery for armature creation, bone constraint networks, automated weight painting, inverse kinematics, and driver graphs.",
+  "supported_platforms": [
+    "windows",
+    "linux",
+    "macos",
+    "blender"
+  ],
+  "activation_conditions": {
+    "intent_patterns": [
+      "run ik solver on skeletal rigging and skinning",
+      "execute skeletal rigging and skinning ik solver engine 24",
+      "analyze ik solver parameters",
+      "ik solver three dimensional graphics and animation"
+    ],
+    "prerequisites": [
+      "Valid input descriptor for ik solver",
+      "Target environment initialized with blender connectivity"
+    ]
+  },
+  "required_inputs": [
+    {
+      "name": "target_payload",
+      "type": "string",
+      "description": "Primary target data or identifier for ik solver execution",
+      "required": true
+    },
+    {
+      "name": "execution_options",
+      "type": "object",
+      "description": "Deterministic execution flags, timeout settings, and output format constraints",
+      "required": false
+    }
+  ],
+  "expected_outputs": [
+    {
+      "name": "execution_report",
+      "type": "object",
+      "description": "Structured result payload containing telemetry and status for ik solver"
+    },
+    {
+      "name": "transformed_artifact",
+      "type": "string",
+      "description": "Path or identifier of the generated or transformed output asset"
+    }
+  ],
+  "execution_workflow": [
+    {
+      "step_number": 1,
+      "action": "Validate inputs and verify blender pre-conditions",
+      "description": "Assert target payload presence and confirm environment permissions for three_dimensional_graphics_and_animation",
+      "expected_outcome": "Input payload confirmed valid and environment ready"
+    },
+    {
+      "step_number": 2,
+      "action": "Execute core ik solver routine",
+      "description": "Dispatch execution envelope to create_primitive under blender runtime boundary",
+      "expected_outcome": "Core operation completed without errors"
+    },
+    {
+      "step_number": 3,
+      "action": "Verify execution integrity and enforce invariants",
+      "description": "Inspect returned artifacts against validation schema and ensure no constraint violations",
+      "expected_outcome": "Invariant checks verified with clean validation status"
+    },
+    {
+      "step_number": 4,
+      "action": "Package structured completion telemetry",
+      "description": "Format output report and serialize state into persistent cache registry",
+      "expected_outcome": "Structured telemetry emitted and state persisted"
+    }
+  ],
+  "decision_logic": {
+    "rules": [
+      {
+        "condition": "Environment blender unavailable",
+        "action": "Route task through fallback executor or mock sandbox"
+      },
+      {
+        "condition": "Output constraint validation failure",
+        "action": "Halt pipeline and emit deterministic diagnostic error report"
+      }
+    ],
+    "fallback": "Switch to conservative inspection mode and alert orchestrator"
+  },
+  "tool_requirements": [
+    {
+      "tool_name": "create_primitive",
+      "server_name": "blender",
+      "optional": false
+    }
+  ],
+  "dependencies": {
+    "system_libraries": [
+      "libc.so.6"
+    ],
+    "runtime_packages": [
+      "nexora-core",
+      "jsonschema"
+    ],
+    "skill_dependencies": []
+  },
+  "safety_restrictions": [
+    "Enforce strict read-only boundary when inspecting external untrusted inputs",
+    "Prohibit destructive file operations without prior checksum verification",
+    "Zero-comment output code enforcement on all synthesized assets"
+  ],
+  "validation_criteria": [
+    "Execution output matches expected response schema",
+    "Telemetry status confirms successful ik solver transformation",
+    "Zero syntax or runtime exceptions encountered"
+  ],
+  "practical_examples": [
+    {
+      "scenario": "Production execution of Skeletal Rigging and Skinning Ik Solver Engine 24",
+      "input": {
+        "target_payload": "payload://skeletal_rigging_and_skinning/ik_solver_sample.dat",
+        "execution_options": {
+          "strict_mode": true,
+          "timeout_seconds": 60
+        }
+      },
+      "expected_output": {
+        "status": "success",
+        "action": "ik_solver",
+        "verified": true
+      }
+    }
+  ],
+  "related_skills": [
+    "nexora.three_dimensional_graphics_and_animation.skeletal_rigging_and_skinning.fallback_001"
+  ],
+  "version": "1.0.0"
+}

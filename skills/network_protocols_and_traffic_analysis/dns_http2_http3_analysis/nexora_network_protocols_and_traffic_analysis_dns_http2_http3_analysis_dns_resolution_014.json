@@ -1,0 +1,138 @@
+{
+  "id": "nexora.network_protocols_and_traffic_analysis.dns_http2_http3_analysis.dns_resolution_014",
+  "name": "DNS HTTP/2 and HTTP/3 Analysis Dns Resolution Engine 14",
+  "purpose": "Executes precision dns resolution procedures for dns http/2 and http/3 analysis within network protocols and traffic analysis workflows",
+  "category": "network_protocols_and_traffic_analysis",
+  "subcategory": "dns_http2_http3_analysis",
+  "description": "Automates advanced dns resolution operations adhering strictly to deterministic execution contracts. This capability provides verifiable output transformation, deep static and dynamic inspection, and structured failure recovery for quic packet inspection, http/2 hpack compression, dns query resolution profiling, and connection multiplexing.",
+  "supported_platforms": [
+    "linux",
+    "cross_platform",
+    "windows"
+  ],
+  "activation_conditions": {
+    "intent_patterns": [
+      "run dns resolution on dns http2 http3 analysis",
+      "execute dns http/2 and http/3 analysis dns resolution engine 14",
+      "analyze dns resolution parameters",
+      "dns resolution network protocols and traffic analysis"
+    ],
+    "prerequisites": [
+      "Valid input descriptor for dns resolution",
+      "Target environment initialized with rea connectivity"
+    ]
+  },
+  "required_inputs": [
+    {
+      "name": "target_payload",
+      "type": "string",
+      "description": "Primary target data or identifier for dns resolution execution",
+      "required": true
+    },
+    {
+      "name": "execution_options",
+      "type": "object",
+      "description": "Deterministic execution flags, timeout settings, and output format constraints",
+      "required": false
+    }
+  ],
+  "expected_outputs": [
+    {
+      "name": "execution_report",
+      "type": "object",
+      "description": "Structured result payload containing telemetry and status for dns resolution"
+    },
+    {
+      "name": "transformed_artifact",
+      "type": "string",
+      "description": "Path or identifier of the generated or transformed output asset"
+    }
+  ],
+  "execution_workflow": [
+    {
+      "step_number": 1,
+      "action": "Validate inputs and verify rea pre-conditions",
+      "description": "Assert target payload presence and confirm environment permissions for network_protocols_and_traffic_analysis",
+      "expected_outcome": "Input payload confirmed valid and environment ready"
+    },
+    {
+      "step_number": 2,
+      "action": "Execute core dns resolution routine",
+      "description": "Dispatch execution envelope to inspect_packet_capture under rea runtime boundary",
+      "expected_outcome": "Core operation completed without errors"
+    },
+    {
+      "step_number": 3,
+      "action": "Verify execution integrity and enforce invariants",
+      "description": "Inspect returned artifacts against validation schema and ensure no constraint violations",
+      "expected_outcome": "Invariant checks verified with clean validation status"
+    },
+    {
+      "step_number": 4,
+      "action": "Package structured completion telemetry",
+      "description": "Format output report and serialize state into persistent cache registry",
+      "expected_outcome": "Structured telemetry emitted and state persisted"
+    }
+  ],
+  "decision_logic": {
+    "rules": [
+      {
+        "condition": "Environment rea unavailable",
+        "action": "Route task through fallback executor or mock sandbox"
+      },
+      {
+        "condition": "Output constraint validation failure",
+        "action": "Halt pipeline and emit deterministic diagnostic error report"
+      }
+    ],
+    "fallback": "Switch to conservative inspection mode and alert orchestrator"
+  },
+  "tool_requirements": [
+    {
+      "tool_name": "inspect_packet_capture",
+      "server_name": "rea",
+      "optional": false
+    }
+  ],
+  "dependencies": {
+    "system_libraries": [
+      "libc.so.6"
+    ],
+    "runtime_packages": [
+      "nexora-core",
+      "jsonschema"
+    ],
+    "skill_dependencies": []
+  },
+  "safety_restrictions": [
+    "Enforce strict read-only boundary when inspecting external untrusted inputs",
+    "Prohibit destructive file operations without prior checksum verification",
+    "Zero-comment output code enforcement on all synthesized assets"
+  ],
+  "validation_criteria": [
+    "Execution output matches expected response schema",
+    "Telemetry status confirms successful dns resolution transformation",
+    "Zero syntax or runtime exceptions encountered"
+  ],
+  "practical_examples": [
+    {
+      "scenario": "Production execution of DNS HTTP/2 and HTTP/3 Analysis Dns Resolution Engine 14",
+      "input": {
+        "target_payload": "payload://dns_http2_http3_analysis/dns_resolution_sample.dat",
+        "execution_options": {
+          "strict_mode": true,
+          "timeout_seconds": 60
+        }
+      },
+      "expected_output": {
+        "status": "success",
+        "action": "dns_resolution",
+        "verified": true
+      }
+    }
+  ],
+  "related_skills": [
+    "nexora.network_protocols_and_traffic_analysis.dns_http2_http3_analysis.fallback_001"
+  ],
+  "version": "1.0.0"
+}

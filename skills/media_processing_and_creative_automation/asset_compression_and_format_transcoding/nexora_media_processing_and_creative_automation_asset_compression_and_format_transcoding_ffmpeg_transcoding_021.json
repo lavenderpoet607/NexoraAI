@@ -1,0 +1,139 @@
+{
+  "id": "nexora.media_processing_and_creative_automation.asset_compression_and_format_transcoding.ffmpeg_transcoding_021",
+  "name": "Asset Compression and Format Transcoding Ffmpeg Transcoding Engine 21",
+  "purpose": "Executes precision ffmpeg transcoding procedures for asset compression and format transcoding within media processing and creative automation workflows",
+  "category": "media_processing_and_creative_automation",
+  "subcategory": "asset_compression_and_format_transcoding",
+  "description": "Automates advanced ffmpeg transcoding operations adhering strictly to deterministic execution contracts. This capability provides verifiable output transformation, deep static and dynamic inspection, and structured failure recovery for ffmpeg pipeline execution, webp/avif compression, lossless codec optimization, and bitrate management.",
+  "supported_platforms": [
+    "cross_platform",
+    "windows",
+    "linux",
+    "macos"
+  ],
+  "activation_conditions": {
+    "intent_patterns": [
+      "run ffmpeg transcoding on asset compression and format transcoding",
+      "execute asset compression and format transcoding ffmpeg transcoding engine 21",
+      "analyze ffmpeg transcoding parameters",
+      "ffmpeg transcoding media processing and creative automation"
+    ],
+    "prerequisites": [
+      "Valid input descriptor for ffmpeg transcoding",
+      "Target environment initialized with blender connectivity"
+    ]
+  },
+  "required_inputs": [
+    {
+      "name": "target_payload",
+      "type": "string",
+      "description": "Primary target data or identifier for ffmpeg transcoding execution",
+      "required": true
+    },
+    {
+      "name": "execution_options",
+      "type": "object",
+      "description": "Deterministic execution flags, timeout settings, and output format constraints",
+      "required": false
+    }
+  ],
+  "expected_outputs": [
+    {
+      "name": "execution_report",
+      "type": "object",
+      "description": "Structured result payload containing telemetry and status for ffmpeg transcoding"
+    },
+    {
+      "name": "transformed_artifact",
+      "type": "string",
+      "description": "Path or identifier of the generated or transformed output asset"
+    }
+  ],
+  "execution_workflow": [
+    {
+      "step_number": 1,
+      "action": "Validate inputs and verify blender pre-conditions",
+      "description": "Assert target payload presence and confirm environment permissions for media_processing_and_creative_automation",
+      "expected_outcome": "Input payload confirmed valid and environment ready"
+    },
+    {
+      "step_number": 2,
+      "action": "Execute core ffmpeg transcoding routine",
+      "description": "Dispatch execution envelope to render_preview under blender runtime boundary",
+      "expected_outcome": "Core operation completed without errors"
+    },
+    {
+      "step_number": 3,
+      "action": "Verify execution integrity and enforce invariants",
+      "description": "Inspect returned artifacts against validation schema and ensure no constraint violations",
+      "expected_outcome": "Invariant checks verified with clean validation status"
+    },
+    {
+      "step_number": 4,
+      "action": "Package structured completion telemetry",
+      "description": "Format output report and serialize state into persistent cache registry",
+      "expected_outcome": "Structured telemetry emitted and state persisted"
+    }
+  ],
+  "decision_logic": {
+    "rules": [
+      {
+        "condition": "Environment blender unavailable",
+        "action": "Route task through fallback executor or mock sandbox"
+      },
+      {
+        "condition": "Output constraint validation failure",
+        "action": "Halt pipeline and emit deterministic diagnostic error report"
+      }
+    ],
+    "fallback": "Switch to conservative inspection mode and alert orchestrator"
+  },
+  "tool_requirements": [
+    {
+      "tool_name": "render_preview",
+      "server_name": "blender",
+      "optional": false
+    }
+  ],
+  "dependencies": {
+    "system_libraries": [
+      "libc.so.6"
+    ],
+    "runtime_packages": [
+      "nexora-core",
+      "jsonschema"
+    ],
+    "skill_dependencies": []
+  },
+  "safety_restrictions": [
+    "Enforce strict read-only boundary when inspecting external untrusted inputs",
+    "Prohibit destructive file operations without prior checksum verification",
+    "Zero-comment output code enforcement on all synthesized assets"
+  ],
+  "validation_criteria": [
+    "Execution output matches expected response schema",
+    "Telemetry status confirms successful ffmpeg transcoding transformation",
+    "Zero syntax or runtime exceptions encountered"
+  ],
+  "practical_examples": [
+    {
+      "scenario": "Production execution of Asset Compression and Format Transcoding Ffmpeg Transcoding Engine 21",
+      "input": {
+        "target_payload": "payload://asset_compression_and_format_transcoding/ffmpeg_transcoding_sample.dat",
+        "execution_options": {
+          "strict_mode": true,
+          "timeout_seconds": 60
+        }
+      },
+      "expected_output": {
+        "status": "success",
+        "action": "ffmpeg_transcoding",
+        "verified": true
+      }
+    }
+  ],
+  "related_skills": [
+    "nexora.media_processing_and_creative_automation.asset_compression_and_format_transcoding.fallback_001"
+  ],
+  "version": "1.0.0"
+}

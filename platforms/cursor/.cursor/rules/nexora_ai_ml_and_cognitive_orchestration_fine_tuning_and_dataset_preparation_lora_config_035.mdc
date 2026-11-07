@@ -1,0 +1,19 @@
+---
+description: Executes precision lora config procedures for fine-tuning and dataset preparation within ai ml and cognitive orchestration workflows
+globs: *
+alwaysApply: false
+---
+
+# Fine-Tuning and Dataset Preparation Lora Config Engine 35
+
+Automates advanced lora config operations adhering strictly to deterministic execution contracts. This capability provides verifiable output transformation, deep static and dynamic inspection, and structured failure recovery for dataset tokenization, synthetic data generation, instruction-tuning curation, and loss metric tracking.
+
+## Activation
+run lora config on fine tuning and dataset preparation, execute fine-tuning and dataset preparation lora config engine 35, analyze lora config parameters, lora config ai ml and cognitive orchestration
+
+## Instructions
+1. Validate inputs and verify orchestrator pre-conditions: Assert target payload presence and confirm environment permissions for ai_ml_and_cognitive_orchestration
+2. Execute core lora config routine: Dispatch execution envelope to call_mcp_tool under orchestrator runtime boundary
+3. Verify execution integrity and enforce invariants: Inspect returned artifacts against validation schema and ensure no constraint violations
+4. Package structured completion telemetry: Format output report and serialize state into persistent cache registry
+

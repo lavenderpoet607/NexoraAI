@@ -1,0 +1,138 @@
+{
+  "id": "nexora.game_development_and_virtual_worlds.physics_and_character_controllers.collision_matrix_031",
+  "name": "Physics and Character Controllers Collision Matrix Engine 31",
+  "purpose": "Executes precision collision matrix procedures for physics and character controllers within game development and virtual worlds workflows",
+  "category": "game_development_and_virtual_worlds",
+  "subcategory": "physics_and_character_controllers",
+  "description": "Automates advanced collision matrix operations adhering strictly to deterministic execution contracts. This capability provides verifiable output transformation, deep static and dynamic inspection, and structured failure recovery for rigid body dynamics, collision groups, humanoid controllers, raycast vehicle mechanics, and inverse kinematics.",
+  "supported_platforms": [
+    "windows",
+    "roblox_studio",
+    "cross_platform"
+  ],
+  "activation_conditions": {
+    "intent_patterns": [
+      "run collision matrix on physics and character controllers",
+      "execute physics and character controllers collision matrix engine 31",
+      "analyze collision matrix parameters",
+      "collision matrix game development and virtual worlds"
+    ],
+    "prerequisites": [
+      "Valid input descriptor for collision matrix",
+      "Target environment initialized with Roblox_Studio connectivity"
+    ]
+  },
+  "required_inputs": [
+    {
+      "name": "target_payload",
+      "type": "string",
+      "description": "Primary target data or identifier for collision matrix execution",
+      "required": true
+    },
+    {
+      "name": "execution_options",
+      "type": "object",
+      "description": "Deterministic execution flags, timeout settings, and output format constraints",
+      "required": false
+    }
+  ],
+  "expected_outputs": [
+    {
+      "name": "execution_report",
+      "type": "object",
+      "description": "Structured result payload containing telemetry and status for collision matrix"
+    },
+    {
+      "name": "transformed_artifact",
+      "type": "string",
+      "description": "Path or identifier of the generated or transformed output asset"
+    }
+  ],
+  "execution_workflow": [
+    {
+      "step_number": 1,
+      "action": "Validate inputs and verify Roblox_Studio pre-conditions",
+      "description": "Assert target payload presence and confirm environment permissions for game_development_and_virtual_worlds",
+      "expected_outcome": "Input payload confirmed valid and environment ready"
+    },
+    {
+      "step_number": 2,
+      "action": "Execute core collision matrix routine",
+      "description": "Dispatch execution envelope to execute_luau under Roblox_Studio runtime boundary",
+      "expected_outcome": "Core operation completed without errors"
+    },
+    {
+      "step_number": 3,
+      "action": "Verify execution integrity and enforce invariants",
+      "description": "Inspect returned artifacts against validation schema and ensure no constraint violations",
+      "expected_outcome": "Invariant checks verified with clean validation status"
+    },
+    {
+      "step_number": 4,
+      "action": "Package structured completion telemetry",
+      "description": "Format output report and serialize state into persistent cache registry",
+      "expected_outcome": "Structured telemetry emitted and state persisted"
+    }
+  ],
+  "decision_logic": {
+    "rules": [
+      {
+        "condition": "Environment Roblox_Studio unavailable",
+        "action": "Route task through fallback executor or mock sandbox"
+      },
+      {
+        "condition": "Output constraint validation failure",
+        "action": "Halt pipeline and emit deterministic diagnostic error report"
+      }
+    ],
+    "fallback": "Switch to conservative inspection mode and alert orchestrator"
+  },
+  "tool_requirements": [
+    {
+      "tool_name": "execute_luau",
+      "server_name": "Roblox_Studio",
+      "optional": false
+    }
+  ],
+  "dependencies": {
+    "system_libraries": [
+      "kernel32.dll"
+    ],
+    "runtime_packages": [
+      "nexora-core",
+      "jsonschema"
+    ],
+    "skill_dependencies": []
+  },
+  "safety_restrictions": [
+    "Enforce strict read-only boundary when inspecting external untrusted inputs",
+    "Prohibit destructive file operations without prior checksum verification",
+    "Zero-comment output code enforcement on all synthesized assets"
+  ],
+  "validation_criteria": [
+    "Execution output matches expected response schema",
+    "Telemetry status confirms successful collision matrix transformation",
+    "Zero syntax or runtime exceptions encountered"
+  ],
+  "practical_examples": [
+    {
+      "scenario": "Production execution of Physics and Character Controllers Collision Matrix Engine 31",
+      "input": {
+        "target_payload": "payload://physics_and_character_controllers/collision_matrix_sample.dat",
+        "execution_options": {
+          "strict_mode": true,
+          "timeout_seconds": 60
+        }
+      },
+      "expected_output": {
+        "status": "success",
+        "action": "collision_matrix",
+        "verified": true
+      }
+    }
+  ],
+  "related_skills": [
+    "nexora.game_development_and_virtual_worlds.physics_and_character_controllers.fallback_001"
+  ],
+  "version": "1.0.0"
+}

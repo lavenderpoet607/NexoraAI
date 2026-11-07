@@ -1,0 +1,139 @@
+{
+  "id": "nexora.software_engineering_and_architecture.ast_parsing_and_refactoring.tree_sitter_027",
+  "name": "AST Parsing and Refactoring Tree Sitter Engine 27",
+  "purpose": "Executes precision tree sitter procedures for ast parsing and refactoring within software engineering and architecture workflows",
+  "category": "software_engineering_and_architecture",
+  "subcategory": "ast_parsing_and_refactoring",
+  "description": "Automates advanced tree sitter operations adhering strictly to deterministic execution contracts. This capability provides verifiable output transformation, deep static and dynamic inspection, and structured failure recovery for syntax tree parsing, ast rewrite rules, automated symbol renaming, and structural code refactoring.",
+  "supported_platforms": [
+    "cross_platform",
+    "linux",
+    "windows",
+    "macos"
+  ],
+  "activation_conditions": {
+    "intent_patterns": [
+      "run tree sitter on ast parsing and refactoring",
+      "execute ast parsing and refactoring tree sitter engine 27",
+      "analyze tree sitter parameters",
+      "tree sitter software engineering and architecture"
+    ],
+    "prerequisites": [
+      "Valid input descriptor for tree sitter",
+      "Target environment initialized with native_shell connectivity"
+    ]
+  },
+  "required_inputs": [
+    {
+      "name": "target_payload",
+      "type": "string",
+      "description": "Primary target data or identifier for tree sitter execution",
+      "required": true
+    },
+    {
+      "name": "execution_options",
+      "type": "object",
+      "description": "Deterministic execution flags, timeout settings, and output format constraints",
+      "required": false
+    }
+  ],
+  "expected_outputs": [
+    {
+      "name": "execution_report",
+      "type": "object",
+      "description": "Structured result payload containing telemetry and status for tree sitter"
+    },
+    {
+      "name": "transformed_artifact",
+      "type": "string",
+      "description": "Path or identifier of the generated or transformed output asset"
+    }
+  ],
+  "execution_workflow": [
+    {
+      "step_number": 1,
+      "action": "Validate inputs and verify native_shell pre-conditions",
+      "description": "Assert target payload presence and confirm environment permissions for software_engineering_and_architecture",
+      "expected_outcome": "Input payload confirmed valid and environment ready"
+    },
+    {
+      "step_number": 2,
+      "action": "Execute core tree sitter routine",
+      "description": "Dispatch execution envelope to run_command under native_shell runtime boundary",
+      "expected_outcome": "Core operation completed without errors"
+    },
+    {
+      "step_number": 3,
+      "action": "Verify execution integrity and enforce invariants",
+      "description": "Inspect returned artifacts against validation schema and ensure no constraint violations",
+      "expected_outcome": "Invariant checks verified with clean validation status"
+    },
+    {
+      "step_number": 4,
+      "action": "Package structured completion telemetry",
+      "description": "Format output report and serialize state into persistent cache registry",
+      "expected_outcome": "Structured telemetry emitted and state persisted"
+    }
+  ],
+  "decision_logic": {
+    "rules": [
+      {
+        "condition": "Environment native_shell unavailable",
+        "action": "Route task through fallback executor or mock sandbox"
+      },
+      {
+        "condition": "Output constraint validation failure",
+        "action": "Halt pipeline and emit deterministic diagnostic error report"
+      }
+    ],
+    "fallback": "Switch to conservative inspection mode and alert orchestrator"
+  },
+  "tool_requirements": [
+    {
+      "tool_name": "run_command",
+      "server_name": "native_shell",
+      "optional": false
+    }
+  ],
+  "dependencies": {
+    "system_libraries": [
+      "libc.so.6"
+    ],
+    "runtime_packages": [
+      "nexora-core",
+      "jsonschema"
+    ],
+    "skill_dependencies": []
+  },
+  "safety_restrictions": [
+    "Enforce strict read-only boundary when inspecting external untrusted inputs",
+    "Prohibit destructive file operations without prior checksum verification",
+    "Zero-comment output code enforcement on all synthesized assets"
+  ],
+  "validation_criteria": [
+    "Execution output matches expected response schema",
+    "Telemetry status confirms successful tree sitter transformation",
+    "Zero syntax or runtime exceptions encountered"
+  ],
+  "practical_examples": [
+    {
+      "scenario": "Production execution of AST Parsing and Refactoring Tree Sitter Engine 27",
+      "input": {
+        "target_payload": "payload://ast_parsing_and_refactoring/tree_sitter_sample.dat",
+        "execution_options": {
+          "strict_mode": true,
+          "timeout_seconds": 60
+        }
+      },
+      "expected_output": {
+        "status": "success",
+        "action": "tree_sitter",
+        "verified": true
+      }
+    }
+  ],
+  "related_skills": [
+    "nexora.software_engineering_and_architecture.ast_parsing_and_refactoring.fallback_001"
+  ],
+  "version": "1.0.0"
+}

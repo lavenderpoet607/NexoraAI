@@ -1,0 +1,19 @@
+---
+description: Executes precision few shot injection procedures for llm prompt engineering and chaining within ai ml and cognitive orchestration workflows
+globs: *
+alwaysApply: false
+---
+
+# LLM Prompt Engineering and Chaining Few Shot Injection Engine 32
+
+Automates advanced few shot injection operations adhering strictly to deterministic execution contracts. This capability provides verifiable output transformation, deep static and dynamic inspection, and structured failure recovery for structured schema prompting, dynamic few-shot injection, chain-of-thought routing, and token budget management.
+
+## Activation
+run few shot injection on llm prompt engineering and chaining, execute llm prompt engineering and chaining few shot injection engine 32, analyze few shot injection parameters, few shot injection ai ml and cognitive orchestration
+
+## Instructions
+1. Validate inputs and verify orchestrator pre-conditions: Assert target payload presence and confirm environment permissions for ai_ml_and_cognitive_orchestration
+2. Execute core few shot injection routine: Dispatch execution envelope to call_mcp_tool under orchestrator runtime boundary
+3. Verify execution integrity and enforce invariants: Inspect returned artifacts against validation schema and ensure no constraint violations
+4. Package structured completion telemetry: Format output report and serialize state into persistent cache registry
+

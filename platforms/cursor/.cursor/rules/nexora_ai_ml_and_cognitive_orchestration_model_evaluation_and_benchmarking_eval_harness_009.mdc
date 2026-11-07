@@ -1,0 +1,19 @@
+---
+description: Executes precision eval harness procedures for model evaluation and benchmarking within ai ml and cognitive orchestration workflows
+globs: *
+alwaysApply: false
+---
+
+# Model Evaluation and Benchmarking Eval Harness Engine 9
+
+Automates advanced eval harness operations adhering strictly to deterministic execution contracts. This capability provides verifiable output transformation, deep static and dynamic inspection, and structured failure recovery for perplexity testing, hallucination detection, benchmark dataset evaluation, and accuracy grading.
+
+## Activation
+run eval harness on model evaluation and benchmarking, execute model evaluation and benchmarking eval harness engine 9, analyze eval harness parameters, eval harness ai ml and cognitive orchestration
+
+## Instructions
+1. Validate inputs and verify orchestrator pre-conditions: Assert target payload presence and confirm environment permissions for ai_ml_and_cognitive_orchestration
+2. Execute core eval harness routine: Dispatch execution envelope to call_mcp_tool under orchestrator runtime boundary
+3. Verify execution integrity and enforce invariants: Inspect returned artifacts against validation schema and ensure no constraint violations
+4. Package structured completion telemetry: Format output report and serialize state into persistent cache registry
+

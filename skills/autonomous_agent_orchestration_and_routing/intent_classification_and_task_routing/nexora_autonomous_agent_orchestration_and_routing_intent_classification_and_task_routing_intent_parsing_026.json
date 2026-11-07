@@ -1,0 +1,138 @@
+{
+  "id": "nexora.autonomous_agent_orchestration_and_routing.intent_classification_and_task_routing.intent_parsing_026",
+  "name": "Intent Classification and Task Routing Intent Parsing Engine 26",
+  "purpose": "Executes precision intent parsing procedures for intent classification and task routing within autonomous agent orchestration and routing workflows",
+  "category": "autonomous_agent_orchestration_and_routing",
+  "subcategory": "intent_classification_and_task_routing",
+  "description": "Automates advanced intent parsing operations adhering strictly to deterministic execution contracts. This capability provides verifiable output transformation, deep static and dynamic inspection, and structured failure recovery for high-speed intent parsing, capability match ranking, dynamic dispatch routing, and multi-skill execution graphs.",
+  "supported_platforms": [
+    "cross_platform",
+    "linux",
+    "windows"
+  ],
+  "activation_conditions": {
+    "intent_patterns": [
+      "run intent parsing on intent classification and task routing",
+      "execute intent classification and task routing intent parsing engine 26",
+      "analyze intent parsing parameters",
+      "intent parsing autonomous agent orchestration and routing"
+    ],
+    "prerequisites": [
+      "Valid input descriptor for intent parsing",
+      "Target environment initialized with orchestrator connectivity"
+    ]
+  },
+  "required_inputs": [
+    {
+      "name": "target_payload",
+      "type": "string",
+      "description": "Primary target data or identifier for intent parsing execution",
+      "required": true
+    },
+    {
+      "name": "execution_options",
+      "type": "object",
+      "description": "Deterministic execution flags, timeout settings, and output format constraints",
+      "required": false
+    }
+  ],
+  "expected_outputs": [
+    {
+      "name": "execution_report",
+      "type": "object",
+      "description": "Structured result payload containing telemetry and status for intent parsing"
+    },
+    {
+      "name": "transformed_artifact",
+      "type": "string",
+      "description": "Path or identifier of the generated or transformed output asset"
+    }
+  ],
+  "execution_workflow": [
+    {
+      "step_number": 1,
+      "action": "Validate inputs and verify orchestrator pre-conditions",
+      "description": "Assert target payload presence and confirm environment permissions for autonomous_agent_orchestration_and_routing",
+      "expected_outcome": "Input payload confirmed valid and environment ready"
+    },
+    {
+      "step_number": 2,
+      "action": "Execute core intent parsing routine",
+      "description": "Dispatch execution envelope to invoke_subagent under orchestrator runtime boundary",
+      "expected_outcome": "Core operation completed without errors"
+    },
+    {
+      "step_number": 3,
+      "action": "Verify execution integrity and enforce invariants",
+      "description": "Inspect returned artifacts against validation schema and ensure no constraint violations",
+      "expected_outcome": "Invariant checks verified with clean validation status"
+    },
+    {
+      "step_number": 4,
+      "action": "Package structured completion telemetry",
+      "description": "Format output report and serialize state into persistent cache registry",
+      "expected_outcome": "Structured telemetry emitted and state persisted"
+    }
+  ],
+  "decision_logic": {
+    "rules": [
+      {
+        "condition": "Environment orchestrator unavailable",
+        "action": "Route task through fallback executor or mock sandbox"
+      },
+      {
+        "condition": "Output constraint validation failure",
+        "action": "Halt pipeline and emit deterministic diagnostic error report"
+      }
+    ],
+    "fallback": "Switch to conservative inspection mode and alert orchestrator"
+  },
+  "tool_requirements": [
+    {
+      "tool_name": "invoke_subagent",
+      "server_name": "orchestrator",
+      "optional": false
+    }
+  ],
+  "dependencies": {
+    "system_libraries": [
+      "libc.so.6"
+    ],
+    "runtime_packages": [
+      "nexora-core",
+      "jsonschema"
+    ],
+    "skill_dependencies": []
+  },
+  "safety_restrictions": [
+    "Enforce strict read-only boundary when inspecting external untrusted inputs",
+    "Prohibit destructive file operations without prior checksum verification",
+    "Zero-comment output code enforcement on all synthesized assets"
+  ],
+  "validation_criteria": [
+    "Execution output matches expected response schema",
+    "Telemetry status confirms successful intent parsing transformation",
+    "Zero syntax or runtime exceptions encountered"
+  ],
+  "practical_examples": [
+    {
+      "scenario": "Production execution of Intent Classification and Task Routing Intent Parsing Engine 26",
+      "input": {
+        "target_payload": "payload://intent_classification_and_task_routing/intent_parsing_sample.dat",
+        "execution_options": {
+          "strict_mode": true,
+          "timeout_seconds": 60
+        }
+      },
+      "expected_output": {
+        "status": "success",
+        "action": "intent_parsing",
+        "verified": true
+      }
+    }
+  ],
+  "related_skills": [
+    "nexora.autonomous_agent_orchestration_and_routing.intent_classification_and_task_routing.fallback_001"
+  ],
+  "version": "1.0.0"
+}

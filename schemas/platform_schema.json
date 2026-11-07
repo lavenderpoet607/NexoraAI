@@ -1,0 +1,247 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "title": "NexoraPlatformSchema",
+  "description": "Universal schema definition for AI platform adapters, capability flags, activation triggers, and export configurations in Nexora AI.",
+  "type": "object",
+  "required": [
+    "platform_id",
+    "name",
+    "version",
+    "vendor",
+    "adapter_type",
+    "native_files",
+    "capabilities",
+    "activation_triggers",
+    "limits",
+    "export_parameters"
+  ],
+  "properties": {
+    "platform_id": {
+      "type": "string",
+      "enum": [
+        "google_antigravity",
+        "claude_code",
+        "cursor",
+        "windsurf",
+        "github_copilot",
+        "cline",
+        "roo_code",
+        "gemini_cli",
+        "openai_codex",
+        "continue",
+        "aider"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "vendor": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "stable",
+        "experimental",
+        "deprecated"
+      ]
+    },
+    "adapter_type": {
+      "type": "string",
+      "enum": [
+        "native_agent_orchestration",
+        "markdown_rules",
+        "frontmatter_mdc",
+        "mode_json_config",
+        "instructions_markdown",
+        "yaml_git_driver",
+        "json_assistant_manifest"
+      ]
+    },
+    "native_files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "path",
+          "format",
+          "scope",
+          "description"
+        ],
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "format": {
+            "type": "string",
+            "enum": [
+              "markdown",
+              "json",
+              "yaml",
+              "mdc",
+              "plain_text"
+            ]
+          },
+          "scope": {
+            "type": "string",
+            "enum": [
+              "workspace",
+              "user",
+              "global",
+              "agent"
+            ]
+          },
+          "description": {
+            "type": "string"
+          },
+          "is_primary": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "capabilities": {
+      "type": "object",
+      "required": [
+        "supports_mcp",
+        "supports_subagents",
+        "supports_background_tasks",
+        "supports_reactive_wakeup",
+        "supports_file_watching",
+        "supports_custom_tools",
+        "supports_terminal_execution",
+        "supports_multimodal",
+        "supports_git_automation",
+        "supports_mode_switching",
+        "supports_context_compaction"
+      ],
+      "properties": {
+        "supports_mcp": {
+          "type": "boolean"
+        },
+        "supports_subagents": {
+          "type": "boolean"
+        },
+        "supports_background_tasks": {
+          "type": "boolean"
+        },
+        "supports_reactive_wakeup": {
+          "type": "boolean"
+        },
+        "supports_file_watching": {
+          "type": "boolean"
+        },
+        "supports_custom_tools": {
+          "type": "boolean"
+        },
+        "supports_terminal_execution": {
+          "type": "boolean"
+        },
+        "supports_multimodal": {
+          "type": "boolean"
+        },
+        "supports_git_automation": {
+          "type": "boolean"
+        },
+        "supports_mode_switching": {
+          "type": "boolean"
+        },
+        "supports_context_compaction": {
+          "type": "boolean"
+        }
+      }
+    },
+    "activation_triggers": {
+      "type": "object",
+      "required": [
+        "methods",
+        "file_globs_supported",
+        "slash_commands_supported"
+      ],
+      "properties": {
+        "methods": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "file_globs_supported": {
+          "type": "boolean"
+        },
+        "slash_commands_supported": {
+          "type": "boolean"
+        },
+        "slash_commands": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "reactive_wakeup_supported": {
+          "type": "boolean"
+        }
+      }
+    },
+    "limits": {
+      "type": "object",
+      "required": [
+        "max_context_tokens",
+        "recommended_instruction_tokens"
+      ],
+      "properties": {
+        "max_context_tokens": {
+          "type": "integer"
+        },
+        "recommended_instruction_tokens": {
+          "type": "integer"
+        },
+        "max_rule_files": {
+          "type": "integer"
+        },
+        "max_tool_definitions": {
+          "type": "integer"
+        }
+      }
+    },
+    "export_parameters": {
+      "type": "object",
+      "required": [
+        "target_format",
+        "output_directory",
+        "primary_file",
+        "merge_strategy",
+        "strip_comments"
+      ],
+      "properties": {
+        "target_format": {
+          "type": "string"
+        },
+        "output_directory": {
+          "type": "string"
+        },
+        "primary_file": {
+          "type": "string"
+        },
+        "merge_strategy": {
+          "type": "string",
+          "enum": [
+            "overwrite",
+            "append",
+            "merge_json",
+            "prepend",
+            "modular_rules"
+          ]
+        },
+        "strip_comments": {
+          "type": "boolean"
+        },
+        "template_id": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "id": "nexora.binary_analysis_and_reverse_engineering.type_and_struct_reconstruction.c_types_030",
+  "name": "Type and Struct Reconstruction C Types Engine 30",
+  "purpose": "Executes precision c types procedures for type and struct reconstruction within binary analysis and reverse engineering workflows",
+  "category": "binary_analysis_and_reverse_engineering",
+  "subcategory": "type_and_struct_reconstruction",
+  "description": "Automates advanced c types operations adhering strictly to deterministic execution contracts. This capability provides verifiable output transformation, deep static and dynamic inspection, and structured failure recovery for stack frame memory layout deduction, virtual table reconstruction, c struct recovery, and type propagation.",
+  "supported_platforms": [
+    "windows",
+    "linux",
+    "ida_pro",
+    "rea"
+  ],
+  "activation_conditions": {
+    "intent_patterns": [
+      "run c types on type and struct reconstruction",
+      "execute type and struct reconstruction c types engine 30",
+      "analyze c types parameters",
+      "c types binary analysis and reverse engineering"
+    ],
+    "prerequisites": [
+      "Valid input descriptor for c types",
+      "Target environment initialized with ida-pro connectivity"
+    ]
+  },
+  "required_inputs": [
+    {
+      "name": "target_payload",
+      "type": "string",
+      "description": "Primary target data or identifier for c types execution",
+      "required": true
+    },
+    {
+      "name": "execution_options",
+      "type": "object",
+      "description": "Deterministic execution flags, timeout settings, and output format constraints",
+      "required": false
+    }
+  ],
+  "expected_outputs": [
+    {
+      "name": "execution_report",
+      "type": "object",
+      "description": "Structured result payload containing telemetry and status for c types"
+    },
+    {
+      "name": "transformed_artifact",
+      "type": "string",
+      "description": "Path or identifier of the generated or transformed output asset"
+    }
+  ],
+  "execution_workflow": [
+    {
+      "step_number": 1,
+      "action": "Validate inputs and verify ida-pro pre-conditions",
+      "description": "Assert target payload presence and confirm environment permissions for binary_analysis_and_reverse_engineering",
+      "expected_outcome": "Input payload confirmed valid and environment ready"
+    },
+    {
+      "step_number": 2,
+      "action": "Execute core c types routine",
+      "description": "Dispatch execution envelope to decompile_function under ida-pro runtime boundary",
+      "expected_outcome": "Core operation completed without errors"
+    },
+    {
+      "step_number": 3,
+      "action": "Verify execution integrity and enforce invariants",
+      "description": "Inspect returned artifacts against validation schema and ensure no constraint violations",
+      "expected_outcome": "Invariant checks verified with clean validation status"
+    },
+    {
+      "step_number": 4,
+      "action": "Package structured completion telemetry",
+      "description": "Format output report and serialize state into persistent cache registry",
+      "expected_outcome": "Structured telemetry emitted and state persisted"
+    }
+  ],
+  "decision_logic": {
+    "rules": [
+      {
+        "condition": "Environment ida-pro unavailable",
+        "action": "Route task through fallback executor or mock sandbox"
+      },
+      {
+        "condition": "Output constraint validation failure",
+        "action": "Halt pipeline and emit deterministic diagnostic error report"
+      }
+    ],
+    "fallback": "Switch to conservative inspection mode and alert orchestrator"
+  },
+  "tool_requirements": [
+    {
+      "tool_name": "decompile_function",
+      "server_name": "ida-pro",
+      "optional": false
+    }
+  ],
+  "dependencies": {
+    "system_libraries": [
+      "libc.so.6"
+    ],
+    "runtime_packages": [
+      "nexora-core",
+      "jsonschema"
+    ],
+    "skill_dependencies": []
+  },
+  "safety_restrictions": [
+    "Enforce strict read-only boundary when inspecting external untrusted inputs",
+    "Prohibit destructive file operations without prior checksum verification",
+    "Zero-comment output code enforcement on all synthesized assets"
+  ],
+  "validation_criteria": [
+    "Execution output matches expected response schema",
+    "Telemetry status confirms successful c types transformation",
+    "Zero syntax or runtime exceptions encountered"
+  ],
+  "practical_examples": [
+    {
+      "scenario": "Production execution of Type and Struct Reconstruction C Types Engine 30",
+      "input": {
+        "target_payload": "payload://type_and_struct_reconstruction/c_types_sample.dat",
+        "execution_options": {
+          "strict_mode": true,
+          "timeout_seconds": 60
+        }
+      },
+      "expected_output": {
+        "status": "success",
+        "action": "c_types",
+        "verified": true
+      }
+    }
+  ],
+  "related_skills": [
+    "nexora.binary_analysis_and_reverse_engineering.type_and_struct_reconstruction.fallback_001"
+  ],
+  "version": "1.0.0"
+}

@@ -1,0 +1,138 @@
+{
+  "id": "nexora.hardware_embedded_and_iot.firmware_extraction_and_unpacking.squashfs_028",
+  "name": "Firmware Extraction and Unpacking Squashfs Engine 28",
+  "purpose": "Executes precision squashfs procedures for firmware extraction and unpacking within hardware embedded and iot workflows",
+  "category": "hardware_embedded_and_iot",
+  "subcategory": "firmware_extraction_and_unpacking",
+  "description": "Automates advanced squashfs operations adhering strictly to deterministic execution contracts. This capability provides verifiable output transformation, deep static and dynamic inspection, and structured failure recovery for binwalk image extraction, squashfs/ubifs filesystem unpacking, bootloader header parsing, and entropy mapping.",
+  "supported_platforms": [
+    "embedded",
+    "linux",
+    "cross_platform"
+  ],
+  "activation_conditions": {
+    "intent_patterns": [
+      "run squashfs on firmware extraction and unpacking",
+      "execute firmware extraction and unpacking squashfs engine 28",
+      "analyze squashfs parameters",
+      "squashfs hardware embedded and iot"
+    ],
+    "prerequisites": [
+      "Valid input descriptor for squashfs",
+      "Target environment initialized with rea connectivity"
+    ]
+  },
+  "required_inputs": [
+    {
+      "name": "target_payload",
+      "type": "string",
+      "description": "Primary target data or identifier for squashfs execution",
+      "required": true
+    },
+    {
+      "name": "execution_options",
+      "type": "object",
+      "description": "Deterministic execution flags, timeout settings, and output format constraints",
+      "required": false
+    }
+  ],
+  "expected_outputs": [
+    {
+      "name": "execution_report",
+      "type": "object",
+      "description": "Structured result payload containing telemetry and status for squashfs"
+    },
+    {
+      "name": "transformed_artifact",
+      "type": "string",
+      "description": "Path or identifier of the generated or transformed output asset"
+    }
+  ],
+  "execution_workflow": [
+    {
+      "step_number": 1,
+      "action": "Validate inputs and verify rea pre-conditions",
+      "description": "Assert target payload presence and confirm environment permissions for hardware_embedded_and_iot",
+      "expected_outcome": "Input payload confirmed valid and environment ready"
+    },
+    {
+      "step_number": 2,
+      "action": "Execute core squashfs routine",
+      "description": "Dispatch execution envelope to inspect_firmware_regions under rea runtime boundary",
+      "expected_outcome": "Core operation completed without errors"
+    },
+    {
+      "step_number": 3,
+      "action": "Verify execution integrity and enforce invariants",
+      "description": "Inspect returned artifacts against validation schema and ensure no constraint violations",
+      "expected_outcome": "Invariant checks verified with clean validation status"
+    },
+    {
+      "step_number": 4,
+      "action": "Package structured completion telemetry",
+      "description": "Format output report and serialize state into persistent cache registry",
+      "expected_outcome": "Structured telemetry emitted and state persisted"
+    }
+  ],
+  "decision_logic": {
+    "rules": [
+      {
+        "condition": "Environment rea unavailable",
+        "action": "Route task through fallback executor or mock sandbox"
+      },
+      {
+        "condition": "Output constraint validation failure",
+        "action": "Halt pipeline and emit deterministic diagnostic error report"
+      }
+    ],
+    "fallback": "Switch to conservative inspection mode and alert orchestrator"
+  },
+  "tool_requirements": [
+    {
+      "tool_name": "inspect_firmware_regions",
+      "server_name": "rea",
+      "optional": false
+    }
+  ],
+  "dependencies": {
+    "system_libraries": [
+      "libc.so.6"
+    ],
+    "runtime_packages": [
+      "nexora-core",
+      "jsonschema"
+    ],
+    "skill_dependencies": []
+  },
+  "safety_restrictions": [
+    "Enforce strict read-only boundary when inspecting external untrusted inputs",
+    "Prohibit destructive file operations without prior checksum verification",
+    "Zero-comment output code enforcement on all synthesized assets"
+  ],
+  "validation_criteria": [
+    "Execution output matches expected response schema",
+    "Telemetry status confirms successful squashfs transformation",
+    "Zero syntax or runtime exceptions encountered"
+  ],
+  "practical_examples": [
+    {
+      "scenario": "Production execution of Firmware Extraction and Unpacking Squashfs Engine 28",
+      "input": {
+        "target_payload": "payload://firmware_extraction_and_unpacking/squashfs_sample.dat",
+        "execution_options": {
+          "strict_mode": true,
+          "timeout_seconds": 60
+        }
+      },
+      "expected_output": {
+        "status": "success",
+        "action": "squashfs",
+        "verified": true
+      }
+    }
+  ],
+  "related_skills": [
+    "nexora.hardware_embedded_and_iot.firmware_extraction_and_unpacking.fallback_001"
+  ],
+  "version": "1.0.0"
+}

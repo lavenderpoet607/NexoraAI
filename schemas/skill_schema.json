@@ -1,0 +1,387 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://nexora.ai/schemas/skill_schema.json",
+  "title": "NexoraSkillSchema",
+  "description": "Universal JSON Schema Draft-07 specification validating all required skill attributes for Nexora AI without comments",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "purpose",
+    "category",
+    "subcategory",
+    "description",
+    "supported_platforms",
+    "activation_conditions",
+    "required_inputs",
+    "expected_outputs",
+    "execution_workflow",
+    "decision_logic",
+    "tool_requirements",
+    "dependencies",
+    "safety_restrictions",
+    "validation_criteria",
+    "practical_examples",
+    "related_skills",
+    "version"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+([._:-][a-z0-9]+)*$",
+      "minLength": 3,
+      "maxLength": 128
+    },
+    "name": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 128
+    },
+    "purpose": {
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 512
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "binary_analysis_and_reverse_engineering",
+        "mobile_security_and_app_analysis",
+        "game_development_and_virtual_worlds",
+        "three_dimensional_graphics_and_animation",
+        "cybersecurity_and_penetration_testing",
+        "system_architecture_and_os_internals",
+        "software_engineering_and_architecture",
+        "web_technologies_and_browser_automation",
+        "ai_ml_and_cognitive_orchestration",
+        "cloud_devops_and_infrastructure",
+        "data_engineering_and_storage_systems",
+        "hardware_embedded_and_iot",
+        "network_protocols_and_traffic_analysis",
+        "media_processing_and_creative_automation",
+        "security_governance_and_compliance",
+        "autonomous_agent_orchestration_and_routing"
+      ]
+    },
+    "subcategory": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 100
+    },
+    "description": {
+      "type": "string",
+      "minLength": 20
+    },
+    "supported_platforms": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "windows",
+          "linux",
+          "macos",
+          "android",
+          "ios",
+          "cross_platform",
+          "web",
+          "roblox_studio",
+          "blender",
+          "ida_pro",
+          "rea",
+          "embedded"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "activation_conditions": {
+      "type": "object",
+      "required": [
+        "intent_patterns",
+        "prerequisites"
+      ],
+      "properties": {
+        "intent_patterns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "prerequisites": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "context_triggers": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "file_type_associations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "required_inputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "type",
+          "description",
+          "required"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "pattern": "^[a-z0-9_]+$"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "string",
+              "integer",
+              "number",
+              "boolean",
+              "array",
+              "object",
+              "file_path",
+              "buffer",
+              "binary",
+              "any"
+            ]
+          },
+          "description": {
+            "type": "string"
+          },
+          "required": {
+            "type": "boolean"
+          },
+          "default": {}
+        },
+        "additionalProperties": false
+      }
+    },
+    "expected_outputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "type",
+          "description"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "pattern": "^[a-z0-9_]+$"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "string",
+              "integer",
+              "number",
+              "boolean",
+              "array",
+              "object",
+              "file_path",
+              "buffer",
+              "binary",
+              "void",
+              "any"
+            ]
+          },
+          "description": {
+            "type": "string"
+          },
+          "format": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "execution_workflow": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "step_number",
+          "action",
+          "description",
+          "expected_outcome"
+        ],
+        "properties": {
+          "step_number": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "action": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "tool": {
+            "type": "string"
+          },
+          "expected_outcome": {
+            "type": "string"
+          },
+          "error_handling": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "decision_logic": {
+      "type": "object",
+      "required": [
+        "rules",
+        "fallback"
+      ],
+      "properties": {
+        "rules": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "condition",
+              "action"
+            ],
+            "properties": {
+              "condition": {
+                "type": "string"
+              },
+              "action": {
+                "type": "string"
+              },
+              "priority": {
+                "type": "integer"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "fallback": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "tool_requirements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "tool_name",
+          "optional"
+        ],
+        "properties": {
+          "tool_name": {
+            "type": "string"
+          },
+          "server_name": {
+            "type": "string"
+          },
+          "version_constraint": {
+            "type": "string"
+          },
+          "optional": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "dependencies": {
+      "type": "object",
+      "required": [
+        "system_libraries",
+        "runtime_packages",
+        "skill_dependencies"
+      ],
+      "properties": {
+        "system_libraries": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "runtime_packages": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "skill_dependencies": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "safety_restrictions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "validation_criteria": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "practical_examples": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "scenario",
+          "input",
+          "expected_output"
+        ],
+        "properties": {
+          "scenario": {
+            "type": "string"
+          },
+          "input": {
+            "type": "object"
+          },
+          "expected_output": {
+            "type": "object"
+          }
+        },
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "related_skills": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    }
+  },
+  "additionalProperties": false
+}

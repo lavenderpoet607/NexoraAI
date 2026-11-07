@@ -1,0 +1,139 @@
+{
+  "id": "nexora.three_dimensional_graphics_and_animation.geometry_nodes_and_simulation.rigid_bodies_014",
+  "name": "Geometry Nodes and Simulation Rigid Bodies Engine 14",
+  "purpose": "Executes precision rigid bodies procedures for geometry nodes and simulation within three dimensional graphics and animation workflows",
+  "category": "three_dimensional_graphics_and_animation",
+  "subcategory": "geometry_nodes_and_simulation",
+  "description": "Automates advanced rigid bodies operations adhering strictly to deterministic execution contracts. This capability provides verifiable output transformation, deep static and dynamic inspection, and structured failure recovery for node-based geometry modification, particle systems, smoke/fire simulation grids, and cloth dynamics.",
+  "supported_platforms": [
+    "windows",
+    "linux",
+    "macos",
+    "blender"
+  ],
+  "activation_conditions": {
+    "intent_patterns": [
+      "run rigid bodies on geometry nodes and simulation",
+      "execute geometry nodes and simulation rigid bodies engine 14",
+      "analyze rigid bodies parameters",
+      "rigid bodies three dimensional graphics and animation"
+    ],
+    "prerequisites": [
+      "Valid input descriptor for rigid bodies",
+      "Target environment initialized with blender connectivity"
+    ]
+  },
+  "required_inputs": [
+    {
+      "name": "target_payload",
+      "type": "string",
+      "description": "Primary target data or identifier for rigid bodies execution",
+      "required": true
+    },
+    {
+      "name": "execution_options",
+      "type": "object",
+      "description": "Deterministic execution flags, timeout settings, and output format constraints",
+      "required": false
+    }
+  ],
+  "expected_outputs": [
+    {
+      "name": "execution_report",
+      "type": "object",
+      "description": "Structured result payload containing telemetry and status for rigid bodies"
+    },
+    {
+      "name": "transformed_artifact",
+      "type": "string",
+      "description": "Path or identifier of the generated or transformed output asset"
+    }
+  ],
+  "execution_workflow": [
+    {
+      "step_number": 1,
+      "action": "Validate inputs and verify blender pre-conditions",
+      "description": "Assert target payload presence and confirm environment permissions for three_dimensional_graphics_and_animation",
+      "expected_outcome": "Input payload confirmed valid and environment ready"
+    },
+    {
+      "step_number": 2,
+      "action": "Execute core rigid bodies routine",
+      "description": "Dispatch execution envelope to create_primitive under blender runtime boundary",
+      "expected_outcome": "Core operation completed without errors"
+    },
+    {
+      "step_number": 3,
+      "action": "Verify execution integrity and enforce invariants",
+      "description": "Inspect returned artifacts against validation schema and ensure no constraint violations",
+      "expected_outcome": "Invariant checks verified with clean validation status"
+    },
+    {
+      "step_number": 4,
+      "action": "Package structured completion telemetry",
+      "description": "Format output report and serialize state into persistent cache registry",
+      "expected_outcome": "Structured telemetry emitted and state persisted"
+    }
+  ],
+  "decision_logic": {
+    "rules": [
+      {
+        "condition": "Environment blender unavailable",
+        "action": "Route task through fallback executor or mock sandbox"
+      },
+      {
+        "condition": "Output constraint validation failure",
+        "action": "Halt pipeline and emit deterministic diagnostic error report"
+      }
+    ],
+    "fallback": "Switch to conservative inspection mode and alert orchestrator"
+  },
+  "tool_requirements": [
+    {
+      "tool_name": "create_primitive",
+      "server_name": "blender",
+      "optional": false
+    }
+  ],
+  "dependencies": {
+    "system_libraries": [
+      "libc.so.6"
+    ],
+    "runtime_packages": [
+      "nexora-core",
+      "jsonschema"
+    ],
+    "skill_dependencies": []
+  },
+  "safety_restrictions": [
+    "Enforce strict read-only boundary when inspecting external untrusted inputs",
+    "Prohibit destructive file operations without prior checksum verification",
+    "Zero-comment output code enforcement on all synthesized assets"
+  ],
+  "validation_criteria": [
+    "Execution output matches expected response schema",
+    "Telemetry status confirms successful rigid bodies transformation",
+    "Zero syntax or runtime exceptions encountered"
+  ],
+  "practical_examples": [
+    {
+      "scenario": "Production execution of Geometry Nodes and Simulation Rigid Bodies Engine 14",
+      "input": {
+        "target_payload": "payload://geometry_nodes_and_simulation/rigid_bodies_sample.dat",
+        "execution_options": {
+          "strict_mode": true,
+          "timeout_seconds": 60
+        }
+      },
+      "expected_output": {
+        "status": "success",
+        "action": "rigid_bodies",
+        "verified": true
+      }
+    }
+  ],
+  "related_skills": [
+    "nexora.three_dimensional_graphics_and_animation.geometry_nodes_and_simulation.fallback_001"
+  ],
+  "version": "1.0.0"
+}

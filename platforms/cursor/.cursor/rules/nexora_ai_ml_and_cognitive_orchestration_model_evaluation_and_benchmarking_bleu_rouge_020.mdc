@@ -1,0 +1,19 @@
+---
+description: Executes precision bleu rouge procedures for model evaluation and benchmarking within ai ml and cognitive orchestration workflows
+globs: *
+alwaysApply: false
+---
+
+# Model Evaluation and Benchmarking Bleu Rouge Engine 20
+
+Automates advanced bleu rouge operations adhering strictly to deterministic execution contracts. This capability provides verifiable output transformation, deep static and dynamic inspection, and structured failure recovery for perplexity testing, hallucination detection, benchmark dataset evaluation, and accuracy grading.
+
+## Activation
+run bleu rouge on model evaluation and benchmarking, execute model evaluation and benchmarking bleu rouge engine 20, analyze bleu rouge parameters, bleu rouge ai ml and cognitive orchestration
+
+## Instructions
+1. Validate inputs and verify orchestrator pre-conditions: Assert target payload presence and confirm environment permissions for ai_ml_and_cognitive_orchestration
+2. Execute core bleu rouge routine: Dispatch execution envelope to call_mcp_tool under orchestrator runtime boundary
+3. Verify execution integrity and enforce invariants: Inspect returned artifacts against validation schema and ensure no constraint violations
+4. Package structured completion telemetry: Format output report and serialize state into persistent cache registry
+
