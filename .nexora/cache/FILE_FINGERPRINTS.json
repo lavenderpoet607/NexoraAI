@@ -1,0 +1,38 @@
+{
+  "AGENTS.md": {
+    "path": "AGENTS.md",
+    "size": 3037,
+    "mtime": 1794587545145,
+    "content_hash": "f15f4ff2fe6bd552bff489e34d72d2a1e025bed9ac659000601f65340498312a",
+    "type": "md",
+    "dependencies": [],
+    "dependents": []
+  },
+  "prompt.txt": {
+    "path": "prompt.txt",
+    "size": 26996,
+    "mtime": 1794587230313,
+    "content_hash": "079ad97334ba9337b672d8f7b428bbbeeee0caa0c2ab74d5de39449d2a97d79f",
+    "type": "txt",
+    "dependencies": [],
+    "dependents": []
+  },
+  ".agents\\skills\\nexora-advanced-intelligence\\SKILL.md": {
+    "path": ".agents\\skills\\nexora-advanced-intelligence\\SKILL.md",
+    "size": 32386,
+    "mtime": 1794587378197,
+    "content_hash": "5bb32b9b079f5cc7ae5e7646b2ce433d822d26f7b897e23f9795ee483bf27853",
+    "type": "md",
+    "dependencies": [],
+    "dependents": []
+  },
+  "nexora-advanced-intelligence\\SKILL.md": {
+    "path": "nexora-advanced-intelligence\\SKILL.md",
+    "size": 32386,
+    "mtime": 1794587378197,
+    "content_hash": "5bb32b9b079f5cc7ae5e7646b2ce433d822d26f7b897e23f9795ee483bf27853",
+    "type": "md",
+    "dependencies": [],
+    "dependents": []
+  }
+}

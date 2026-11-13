@@ -1,0 +1,1025 @@
+
+# PROJECT: NEXORA ULTIMATE ADVANCED INTELLIGENCE
+
+## 1. PROJECT OBJECTIVE
+
+Buat satu skill AI tingkat lanjut bernama:
+
+nexora-advanced-intelligence
+
+Skill ini dirancang untuk meningkatkan kemampuan kerja AI coding agent di Antigravity dan platform agent lain yang kompatibel.
+
+Fokus utama:
+
+- Advanced Thinking dan problem solving
+- Deep reasoning workflow
+- Adaptive thinking modes
+- Context engineering
+- Automatic context compacting
+- Persistent project memory
+- Automatic project cache
+- Cross-chat context restoration
+- Incremental repository analysis
+- Multi-agent orchestration
+- Subagent coordination
+- Token optimization
+- Autonomous development
+- Self-review dan error recovery
+- Automatic testing
+- Automatic test cleanup
+- Project continuity
+- Long-running task management
+
+Hasil akhir wajib berupa satu file utama:
+
+nexora-advanced-intelligence/SKILL.md
+
+Jangan membuat satu file SKILL.md untuk setiap fitur. Semua kemampuan harus berada dalam satu skill terpadu.
+
+## 2. INITIAL AUDIT
+
+Sebelum membuat file apa pun:
+
+1. Periksa struktur repository.
+2. Periksa file dan folder yang sudah tersedia.
+3. Periksa konfigurasi Antigravity.
+4. Periksa skill yang sudah terpasang.
+5. Periksa dokumentasi resmi format SKILL.md yang digunakan platform.
+6. Periksa dukungan subagents dan tools yang benar-benar tersedia.
+7. Periksa kemampuan penyimpanan cache lintas sesi.
+8. Periksa apakah terdapat sistem memory atau context persistence.
+9. Identifikasi fitur yang sudah tersedia agar tidak dibuat ulang.
+10. Identifikasi batasan platform.
+
+Jangan mengasumsikan fitur tersedia jika belum diverifikasi.
+
+Jangan mengganti konfigurasi pengguna tanpa alasan yang jelas.
+
+Jangan membuat file yang tidak diperlukan.
+
+## 3. ADVANCED THINKING ENGINE
+
+Buat sistem berpikir adaptif yang membantu agent menyelesaikan pekerjaan kompleks secara sistematis.
+
+Kemampuan:
+
+- Complex problem decomposition
+- Multi-step problem solving
+- Root cause analysis
+- Critical evaluation
+- Architectural reasoning
+- Dependency reasoning
+- Risk assessment
+- Constraint analysis
+- Trade-off evaluation
+- Solution comparison
+- Hypothesis validation
+- Technical decision making
+- Failure prediction
+- Edge-case identification
+- Self-review
+
+Agent harus menggunakan analisis internal yang sesuai kebutuhan dan memberikan hasil, alasan, keputusan, serta ringkasan yang dapat diperiksa.
+
+Jangan mengklaim dapat mengakses hidden chain-of-thought atau mekanisme internal model lain.
+
+## 4. ADAPTIVE THINKING MODES
+
+Implementasikan mode kerja berikut:
+
+### FAST MODE
+Untuk pertanyaan sederhana dan perubahan kecil.
+
+### BALANCED MODE
+Untuk tugas coding umum dan analisis menengah.
+
+### DEEP MODE
+Untuk masalah kompleks, debugging, dan perubahan lintas modul.
+
+### EXPERT MODE
+Untuk arsitektur, engineering, dan keputusan teknis kompleks.
+
+### CRITICAL MODE
+Untuk audit, evaluasi risiko, dan pemeriksaan kualitas.
+
+### DEBUG MODE
+Untuk investigasi error dan root cause analysis.
+
+### ARCHITECT MODE
+Untuk desain sistem, struktur proyek, dan evaluasi arsitektur.
+
+### RESEARCH MODE
+Untuk riset teknis dan validasi informasi.
+
+### AUTONOMOUS MODE
+Untuk mengerjakan tugas secara mandiri dengan batasan dan persetujuan yang sesuai.
+
+### RECOVERY MODE
+Untuk melanjutkan pekerjaan dari cache, session handoff, atau konteks sebelumnya.
+
+Agent harus memilih mode berdasarkan kompleksitas pekerjaan, bukan selalu menggunakan mode paling berat.
+
+## 5. CONTEXT ENGINEERING
+
+Bangun sistem pengelolaan konteks yang efisien.
+
+Fitur:
+
+- Context prioritization
+- Context relevance scoring
+- Context deduplication
+- Context summarization
+- Context preservation
+- Context restoration
+- Context compression
+- Important instruction preservation
+- Decision preservation
+- Task state preservation
+- Dependency context tracking
+- Conversation context extraction
+
+Prioritaskan informasi berikut:
+
+1. Instruksi pengguna.
+2. Tujuan proyek.
+3. Keputusan arsitektur.
+4. Kondisi repository.
+5. Progress implementasi.
+6. Error yang belum terselesaikan.
+7. Hasil pengujian.
+8. File yang berubah.
+9. Pekerjaan berikutnya.
+
+Jangan mempertahankan informasi yang sudah tidak relevan.
+
+Jangan menghilangkan instruksi penting saat melakukan compacting.
+
+## 6. AUTOMATIC CONTEXT COMPACTING
+
+Buat sistem context compacting adaptif.
+
+Gunakan tingkat tekanan konteks berikut sebagai indikator perkiraan:
+
+- 50%: mulai mengurangi informasi berulang.
+- 65%: prioritaskan informasi penting.
+- 75%: buat ringkasan progres.
+- 85%: simpan session handoff.
+- 95%: pertahankan hanya konteks penting untuk kelanjutan.
+
+Angka tersebut hanya ambang kebijakan, bukan pengukuran token aktual kecuali platform menyediakan telemetry yang dapat diverifikasi.
+
+Fitur:
+
+- Automatic summarization
+- Context compression
+- Duplicate removal
+- Priority preservation
+- Task state snapshot
+- Decision snapshot
+- Error snapshot
+- Pending task preservation
+- Recovery summary
+
+Format ringkasan harus memungkinkan agent lain melanjutkan pekerjaan tanpa mengulang seluruh percakapan.
+
+## 7. PERSISTENT PROJECT MEMORY
+
+Buat sistem memori proyek berbasis file yang dapat digunakan kembali selama sesi baru.
+
+Gunakan folder:
+
+.nexora/
+
+Struktur runtime yang direkomendasikan:
+
+.nexora/
+  cache/
+    CACHE_INDEX.json
+    PROJECT_STATE.json
+    ARCHITECTURE_CACHE.json
+    DEPENDENCY_CACHE.json
+    FILE_FINGERPRINTS.json
+    DECISION_CACHE.json
+    TEST_CACHE.json
+    CONVERSATION_CONTEXT.json
+    SESSION_HANDOFF.json
+
+Jangan membuat seluruh file jika belum diperlukan.
+
+Buat file secara bertahap berdasarkan kebutuhan proyek.
+
+Setiap informasi yang disimpan harus memiliki:
+
+- Timestamp
+- Source
+- Status
+- Project identifier
+- Validity information
+- Relevant file references
+
+Jangan menyimpan password, API key, access token, private key, credential, atau informasi rahasia lainnya.
+
+## 8. AUTOMATIC PROJECT CACHE
+
+Buat AutoCache untuk menyimpan hasil analisis repository.
+
+Cache harus dapat menyimpan:
+
+- Project structure
+- Architecture summary
+- Important file descriptions
+- Dependency information
+- Configuration summary
+- Database schema summary
+- API structure
+- Routes
+- Important functions
+- Module relationships
+- Technical decisions
+- Implementation progress
+- Known issues
+- Test results
+
+Cache dibuat atau diperbarui setelah:
+
+- Repository audit
+- Architecture analysis
+- Dependency analysis
+- Major implementation
+- Important code changes
+- Debugging
+- Test execution
+- Technical decisions
+- Context compacting
+- Session handoff
+
+Cache harus menyimpan ringkasan dan referensi file, bukan menyalin seluruh repository.
+
+## 9. FILE FINGERPRINT SYSTEM
+
+Implementasikan fingerprint untuk mendeteksi perubahan repository.
+
+Gunakan informasi:
+
+- Relative file path
+- File size
+- Modified timestamp
+- Content hash jika diperlukan
+- File type
+- Relevant dependency relationship
+
+Kecualikan direktori yang tidak relevan seperti:
+
+- node_modules
+- .git
+- build
+- dist
+- coverage
+- .dart_tool
+- vendor
+- generated output
+- temporary files
+
+Daftar pengecualian harus disesuaikan dengan teknologi proyek.
+
+Ketika repository berubah:
+
+1. Identifikasi file baru.
+2. Identifikasi file yang berubah.
+3. Identifikasi file yang dihapus.
+4. Periksa dependensi file yang berubah.
+5. Invalidasi cache yang sudah tidak valid.
+6. Pertahankan cache yang masih valid.
+7. Baca hanya file yang relevan.
+
+Jangan menganggap cache selalu benar.
+
+Validasi cache terhadap kondisi repository saat ini.
+
+## 10. CROSS-CHAT MEMORY
+
+Buat mekanisme agar pekerjaan dari chat sebelumnya dapat dilanjutkan di chat baru.
+
+Alur ketika chat baru dimulai:
+
+1. Periksa apakah skill aktif.
+2. Cari folder .nexora/cache/.
+3. Baca CACHE_INDEX.json jika tersedia.
+4. Baca PROJECT_STATE.json.
+5. Baca SESSION_HANDOFF.json.
+6. Periksa CONVERSATION_CONTEXT.json.
+7. Bandingkan fingerprint repository.
+8. Identifikasi perubahan sejak sesi sebelumnya.
+9. Validasi informasi cache.
+10. Pulihkan status pekerjaan.
+11. Lanjutkan dari pekerjaan terakhir yang belum selesai.
+
+Agent tidak boleh langsung membaca ulang seluruh repository jika cache masih valid.
+
+Jika cache tidak tersedia:
+
+- Lakukan audit awal seperlunya.
+- Buat cache baru.
+- Simpan hasil audit.
+- Gunakan cache pada sesi berikutnya.
+
+Penting:
+
+Jangan mengklaim dapat membaca seluruh riwayat chat lama secara otomatis jika platform tidak menyediakan akses tersebut.
+
+Gunakan persistent cache sebagai sumber kontinuitas lintas chat.
+
+Jika project storage tidak tersedia atau tidak persisten, jelaskan keterbatasannya.
+
+## 11. SESSION HANDOFF
+
+Sebelum sesi berakhir atau pekerjaan dihentikan, simpan:
+
+- Project overview
+- Current task
+- Completed tasks
+- Current implementation state
+- Modified files
+- Important decisions
+- Known issues
+- Failed attempts
+- Test results
+- Pending tasks
+- Next recommended action
+
+Gunakan SESSION_HANDOFF.json.
+
+Jangan menyatakan pekerjaan selesai jika masih ada tugas yang belum diselesaikan.
+
+## 12. NEW CHAT RECOVERY
+
+Ketika pengguna membuka chat baru dan melanjutkan proyek:
+
+Agent harus:
+
+1. Memeriksa cache.
+2. Memulihkan konteks proyek.
+3. Memulihkan tujuan terakhir.
+4. Memulihkan progress.
+5. Memulihkan keputusan.
+6. Memeriksa perubahan repository.
+7. Memeriksa pekerjaan yang belum selesai.
+8. Menentukan file yang perlu dibaca ulang.
+9. Melanjutkan pekerjaan dari tahap terakhir.
+
+Jangan mengulang pekerjaan yang sudah selesai dan terverifikasi.
+
+Jangan mengandalkan ringkasan lama jika kondisi source code sudah berubah.
+
+## 13. INCREMENTAL REPOSITORY INTELLIGENCE
+
+Buat sistem analisis repository secara bertahap.
+
+Kemampuan:
+
+- Selective file reading
+- Changed file detection
+- Dependency-aware analysis
+- Relevant file discovery
+- Architecture cache
+- Symbol reference tracking
+- Configuration tracking
+- Module relationship analysis
+- Incremental documentation updates
+
+Agent harus menghindari membaca seluruh file setiap kali melakukan perubahan kecil.
+
+Namun, agent tetap wajib membaca file tambahan jika dibutuhkan untuk memahami dependency, keamanan, atau dampak perubahan.
+
+Jangan mengorbankan akurasi hanya demi menghemat token.
+
+## 14. MULTI-AGENT ORCHESTRATION
+
+Gunakan subagents jika platform benar-benar mendukungnya.
+
+Buat pembagian tanggung jawab logis berikut:
+
+1. Master Orchestrator
+2. Thinking Agent
+3. Planning Agent
+4. Architecture Agent
+5. Research Agent
+6. Code Analysis Agent
+7. Implementation Agent
+8. Debugging Agent
+9. Security Review Agent
+10. Testing Agent
+11. Documentation Agent
+12. Optimization Agent
+13. Quality Assurance Agent
+
+Tanggung jawab:
+
+Master Orchestrator:
+Mengatur alur kerja, prioritas, pembagian tugas, dan integrasi hasil.
+
+Thinking Agent:
+Mengevaluasi kompleksitas dan strategi penyelesaian.
+
+Planning Agent:
+Membuat tahapan implementasi.
+
+Architecture Agent:
+Mengevaluasi desain dan dependency.
+
+Research Agent:
+Memvalidasi informasi teknis.
+
+Code Analysis Agent:
+Memeriksa source code dan dampak perubahan.
+
+Implementation Agent:
+Mengerjakan perubahan source code.
+
+Debugging Agent:
+Menganalisis error dan mencari root cause.
+
+Security Review Agent:
+Mengaudit keamanan dan risiko.
+
+Testing Agent:
+Menjalankan pengujian yang relevan.
+
+Documentation Agent:
+Memperbarui dokumentasi.
+
+Optimization Agent:
+Mengevaluasi performa dan efisiensi.
+
+Quality Assurance Agent:
+Memverifikasi hasil akhir.
+
+Aturan:
+
+- Gunakan subagents untuk pekerjaan paralel yang independen.
+- Hindari menjalankan dua agent yang mengubah file sama secara bersamaan.
+- Tentukan pembagian file dan tanggung jawab.
+- Gabungkan hasil sebelum finalisasi.
+- Validasi hasil subagent.
+- Jangan mengklaim subagents berjalan jika platform tidak mendukungnya.
+- Jika subagents tidak tersedia, gunakan workflow berurutan dengan peran logis yang sama.
+
+## 15. TOKEN OPTIMIZATION
+
+Buat sistem penghematan token.
+
+Fitur:
+
+- Cache-first workflow
+- Incremental reading
+- Context deduplication
+- Relevant file selection
+- Compact summaries
+- Reusable analysis
+- Minimal tool calls
+- Efficient subagent delegation
+- Avoid unnecessary explanations
+- Avoid repeated research
+- Avoid duplicate implementation
+
+Hindari:
+
+- Membaca file yang tidak relevan.
+- Membuat file tanpa kebutuhan.
+- Mengulang analisis yang masih valid.
+- Mengulang pencarian yang sudah memiliki hasil valid.
+- Menghasilkan kode berlebihan.
+- Mengulang proses yang sudah selesai.
+
+Jangan mengorbankan keamanan dan kualitas demi penghematan token.
+
+## 16. TASK DECOMPOSITION
+
+Setiap pekerjaan kompleks harus dipecah menjadi beberapa tahapan.
+
+Contoh:
+
+1. Audit
+2. Analysis
+3. Planning
+4. Architecture
+5. Implementation
+6. Testing
+7. Debugging
+8. Cleanup
+9. Documentation
+10. Final verification
+
+Setiap tahapan harus mempunyai kondisi selesai yang jelas.
+
+Prioritaskan dependency yang menghambat pekerjaan lain.
+
+Jangan melanjutkan tahap berikutnya jika terdapat kegagalan kritis yang belum ditangani.
+
+## 17. AUTONOMOUS DEVELOPMENT
+
+Agent harus mampu mengerjakan tugas secara mandiri sesuai izin yang tersedia.
+
+Kemampuan:
+
+- Understand user objective
+- Inspect existing implementation
+- Plan implementation
+- Modify relevant files
+- Resolve errors
+- Execute tests
+- Review changes
+- Update cache
+- Update documentation
+- Clean temporary artifacts
+- Generate completion summary
+
+Agent tidak boleh melakukan tindakan destruktif di luar ruang lingkup tanpa persetujuan.
+
+Jangan menghapus data produksi, database, credential, atau file pengguna tanpa otorisasi yang jelas.
+
+## 18. SELF-REFLECTION
+
+Sebelum menyelesaikan pekerjaan, lakukan pemeriksaan:
+
+- Apakah kebutuhan pengguna sudah terpenuhi?
+- Apakah implementasi sesuai arsitektur?
+- Apakah ada perubahan yang tidak diperlukan?
+- Apakah ada dependency yang rusak?
+- Apakah ada error yang belum ditangani?
+- Apakah keamanan tetap terjaga?
+- Apakah pengujian sudah dilakukan?
+- Apakah cache sudah diperbarui?
+- Apakah dokumentasi sesuai implementasi?
+- Apakah ada file sementara yang harus dibersihkan?
+
+Perbaiki masalah yang ditemukan sebelum menyatakan pekerjaan selesai.
+
+## 19. ERROR RECOVERY
+
+Buat mekanisme pemulihan ketika terjadi kegagalan.
+
+Kategori:
+
+- Build failure
+- Dependency failure
+- Runtime failure
+- Test failure
+- Configuration failure
+- Cache corruption
+- Context loss
+- Tool failure
+- Subagent failure
+- Integration failure
+
+Alur:
+
+1. Identifikasi error.
+2. Tentukan root cause.
+3. Evaluasi dampak.
+4. Tentukan solusi.
+5. Terapkan perbaikan.
+6. Jalankan pengujian ulang.
+7. Perbarui cache.
+8. Catat hasil.
+
+Jangan mengulang perbaikan yang sama tanpa perubahan strategi.
+
+## 20. CODE QUALITY
+
+Ketika membuat atau mengubah source code:
+
+- Ikuti struktur proyek yang sudah ada.
+- Gunakan pola arsitektur yang sesuai.
+- Hindari duplikasi.
+- Hindari dependency yang tidak diperlukan.
+- Hindari file yang tidak diperlukan.
+- Gunakan naming yang konsisten.
+- Validasi input.
+- Tangani error dengan benar.
+- Perhatikan performa.
+- Perhatikan keamanan.
+- Pertahankan kompatibilitas.
+
+Hindari komentar dalam source code seperti //, /* */, dan # kecuali benar-benar diwajibkan oleh sintaks, konfigurasi, atau dokumentasi tool.
+
+Jangan mengubah file yang tidak berhubungan dengan tugas.
+
+## 21. SECURITY AND RELIABILITY
+
+Setiap perubahan penting harus mempertimbangkan:
+
+- Authentication
+- Authorization
+- Input validation
+- Data exposure
+- Credential handling
+- Injection risks
+- Dependency vulnerabilities
+- File permissions
+- API security
+- Database safety
+- Error information leakage
+- Production configuration
+
+Jangan menyimpan secret di cache.
+
+Jangan memasukkan credential ke dokumentasi atau session handoff.
+
+Jangan menonaktifkan proteksi keamanan untuk membuat pengujian terlihat berhasil.
+
+## 22. RESEARCH VALIDATION
+
+Ketika membutuhkan informasi eksternal:
+
+- Utamakan dokumentasi resmi.
+- Periksa kompatibilitas versi.
+- Validasi contoh implementasi.
+- Periksa tanggal informasi.
+- Bedakan fakta dan asumsi.
+- Hindari sumber yang tidak dapat diverifikasi.
+- Simpan ringkasan hasil riset yang masih relevan.
+
+Jangan menggunakan informasi lama jika sudah terdapat dokumentasi versi terbaru.
+
+## 23. AUTOMATIC TESTING ENGINE
+
+Buat workflow pengujian otomatis sesuai teknologi proyek.
+
+Jenis pengujian:
+
+- Unit testing
+- Integration testing
+- API testing
+- UI testing
+- Build testing
+- Runtime testing
+- Regression testing
+- Security testing
+- Static analysis
+- Dependency validation
+
+Aturan:
+
+1. Periksa test suite yang sudah ada.
+2. Gunakan test yang sudah tersedia jika relevan.
+3. Buat test sementara hanya jika diperlukan.
+4. Tentukan hasil yang diharapkan.
+5. Jalankan pengujian.
+6. Periksa output sebenarnya.
+7. Identifikasi kegagalan.
+8. Perbaiki masalah.
+9. Jalankan ulang pengujian yang relevan.
+10. Simpan hasil pengujian.
+
+Jangan membuat test palsu yang selalu menghasilkan PASS.
+
+Jangan mengubah assertion hanya agar pengujian berhasil.
+
+Jangan mengklaim pengujian berhasil jika belum dijalankan.
+
+## 24. AUTOMATIC TEST CLEANUP
+
+Implementasikan fitur Auto Test Cleanup.
+
+Tujuan:
+
+Membersihkan seluruh test sementara dan artefak pengujian yang dibuat khusus selama pengerjaan setelah pengujian selesai.
+
+Klasifikasikan file pengujian menjadi:
+
+A. Temporary Test Files
+File pengujian sementara yang dibuat oleh agent untuk tugas saat ini.
+
+B. Test Artifacts
+Log sementara, screenshot pengujian, hasil simulasi, temporary build output, coverage sementara, dan file hasil eksekusi yang tidak diperlukan.
+
+C. Existing Test Suite
+Test suite yang sudah ada sebelum pekerjaan dimulai.
+
+D. Permanent Test Infrastructure
+Konfigurasi test, CI workflow, test fixture, mock, helper, test data, dan file yang dibutuhkan untuk pengujian proyek.
+
+E. User-Owned Test Files
+File pengujian yang dibuat atau dikelola pengguna.
+
+Aturan penghapusan:
+
+1. Inventarisasi seluruh file test sebelum perubahan.
+2. Catat file test yang dibuat oleh agent.
+3. Tandai artefak sementara yang boleh dibersihkan.
+4. Jalankan semua pengujian yang diwajibkan.
+5. Verifikasi hasil pengujian.
+6. Simpan laporan hasil pengujian.
+7. Hapus temporary test files yang dibuat agent jika sudah tidak diperlukan.
+8. Hapus temporary test artifacts.
+9. Bersihkan temporary directory.
+10. Periksa kembali repository setelah cleanup.
+11. Pastikan tidak ada file penting yang ikut terhapus.
+12. Perbarui cache setelah cleanup.
+
+Pengamanan:
+
+- Jangan menghapus existing test suite secara otomatis.
+- Jangan menghapus test yang diperlukan CI/CD.
+- Jangan menghapus test fixture dan mock yang masih digunakan.
+- Jangan menghapus test milik pengguna.
+- Jangan menghapus konfigurasi testing.
+- Jangan menghapus database atau data proyek.
+- Jangan menghapus file hanya karena namanya mengandung kata test.
+- Jangan menggunakan perintah penghapusan massal tanpa daftar target yang jelas.
+
+Jika pengguna secara eksplisit meminta seluruh test suite permanen dihapus:
+
+1. Tampilkan daftar file yang akan dihapus.
+2. Jelaskan dampaknya.
+3. Minta persetujuan sebelum penghapusan.
+4. Hapus hanya file yang telah disetujui.
+5. Pertahankan laporan hasil pengujian.
+
+Jangan menghapus source test sebelum seluruh pengujian yang relevan selesai.
+
+Jika pengujian gagal, pertahankan file yang diperlukan untuk debugging sampai masalah ditangani atau pengguna memutuskan untuk menghentikannya.
+
+Laporan harus mencatat:
+
+- Total test dijalankan
+- Total PASS
+- Total FAIL
+- Total SKIPPED
+- Temporary files created
+- Temporary files removed
+- Permanent test files preserved
+- Cleanup status
+
+Jangan mengklaim cleanup berhasil tanpa memeriksa kondisi repository setelah penghapusan.
+
+## 25. QUALITY GATES
+
+Gunakan quality gate berikut:
+
+GATE 1 — Repository Audit
+Struktur dan kondisi proyek dipahami.
+
+GATE 2 — Planning
+Rencana dan ruang lingkup jelas.
+
+GATE 3 — Architecture
+Solusi sesuai struktur proyek.
+
+GATE 4 — Implementation
+Perubahan berhasil diterapkan.
+
+GATE 5 — Testing
+Pengujian relevan sudah dijalankan.
+
+GATE 6 — Security
+Tidak ditemukan masalah keamanan kritis yang belum ditangani.
+
+GATE 7 — Cleanup
+Artefak sementara sudah dibersihkan.
+
+GATE 8 — Documentation
+Dokumentasi dan cache sudah diperbarui.
+
+GATE 9 — Final Verification
+Kondisi akhir proyek telah diperiksa.
+
+Jangan melewati quality gate kritis hanya untuk mempercepat pekerjaan.
+
+## 26. ADAPTIVE WORKFLOW
+
+Sesuaikan workflow dengan skala tugas.
+
+Small Task:
+- Baca konteks relevan.
+- Implementasi.
+- Validasi.
+- Update cache jika diperlukan.
+
+Medium Task:
+- Analisis.
+- Planning.
+- Implementasi bertahap.
+- Testing.
+- Cleanup.
+- Update cache.
+
+Large Task:
+- Audit repository.
+- Deep analysis.
+- Architecture review.
+- Task decomposition.
+- Subagent orchestration jika tersedia.
+- Implementasi bertahap.
+- Testing.
+- Security review.
+- Cleanup.
+- Documentation.
+- Session handoff.
+
+## 27. USER INTERACTION INTELLIGENCE
+
+Agent harus memahami instruksi pengguna tanpa membuat asumsi berlebihan.
+
+Aturan:
+
+- Jangan menanyakan informasi yang sudah tersedia.
+- Jangan mengulang pertanyaan yang sudah dijawab.
+- Tanyakan hanya informasi yang benar-benar diperlukan.
+- Jelaskan risiko sebelum tindakan destruktif.
+- Berikan ringkasan perubahan.
+- Laporkan keterbatasan secara jujur.
+- Jangan mengklaim fitur yang tidak tersedia.
+
+## 28. ACTIVATION CONDITIONS
+
+Skill harus aktif ketika pengguna meminta:
+
+- Coding
+- Software development
+- Repository analysis
+- Debugging
+- Architecture design
+- Refactoring
+- Optimization
+- Research
+- Testing
+- Long-running project
+- Context restoration
+- New chat continuation
+- Multi-file implementation
+- Autonomous development
+
+Untuk pertanyaan sederhana, gunakan mode ringan.
+
+Jangan memaksakan seluruh workflow untuk tugas yang tidak membutuhkannya.
+
+## 29. PLATFORM COMPATIBILITY
+
+Buat instruksi skill yang kompatibel dengan format dan kemampuan platform target.
+
+Prioritas:
+
+- Antigravity
+- Gemini-based coding agents
+- Claude-based coding agents
+- Agentic IDE
+- Tool-enabled coding assistants
+
+Jangan mengasumsikan semua platform memiliki fitur yang sama.
+
+Gunakan kemampuan yang benar-benar tersedia.
+
+Jika platform tidak mendukung:
+
+- Subagents, gunakan workflow berurutan.
+- Persistent storage, jelaskan keterbatasan.
+- Context telemetry, gunakan estimasi dan indikator.
+- Automatic memory, gunakan cache proyek jika tersedia.
+- Background execution, jangan mengklaim proses berjalan di belakang layar.
+
+## 30. IMPLEMENTATION REQUIREMENTS
+
+Buat satu file utama:
+
+nexora-advanced-intelligence/SKILL.md
+
+Isi file harus mencakup seluruh sistem:
+
+- Advanced Thinking
+- Adaptive Thinking Modes
+- Context Engineering
+- Automatic Context Compacting
+- Persistent Project Memory
+- Automatic Project Cache
+- File Fingerprinting
+- Cross-Chat Memory
+- Session Handoff
+- New Chat Recovery
+- Incremental Repository Intelligence
+- Multi-Agent Orchestration
+- Token Optimization
+- Task Decomposition
+- Autonomous Development
+- Self-Reflection
+- Error Recovery
+- Code Quality
+- Security and Reliability
+- Research Validation
+- Automatic Testing
+- Automatic Test Cleanup
+- Quality Gates
+- Adaptive Workflow
+- User Interaction Intelligence
+- Platform Compatibility
+
+Pastikan SKILL.md memiliki:
+
+1. Skill name.
+2. Description.
+3. Activation instructions.
+4. Operational workflow.
+5. Cache protocol.
+6. Recovery protocol.
+7. Testing protocol.
+8. Cleanup protocol.
+9. Safety constraints.
+10. Platform compatibility rules.
+
+Ikuti batas ukuran, struktur, dan format resmi skill platform.
+
+Jika SKILL.md terlalu panjang untuk batas platform, optimalkan isinya tanpa menghilangkan fungsi inti. Jangan membuat file skill tambahan kecuali pengguna menyetujuinya.
+
+## 31. DOCUMENTATION AND VALIDATION
+
+Setelah implementasi:
+
+- Validasi format SKILL.md.
+- Periksa struktur metadata.
+- Periksa instruksi aktivasi.
+- Periksa konsistensi seluruh fitur.
+- Periksa aturan cache.
+- Periksa mekanisme lintas chat.
+- Periksa aturan subagent.
+- Periksa mekanisme test cleanup.
+- Periksa keamanan penghapusan file.
+- Periksa kompatibilitas platform.
+
+Jalankan validasi yang benar-benar dapat dilakukan.
+
+Jangan mengarang hasil pengujian.
+
+## 32. ACCEPTANCE CRITERIA
+
+Skill dinyatakan siap jika:
+
+1. Semua fungsi utama terdokumentasi.
+2. Seluruh mode berpikir dijelaskan.
+3. Context compacting memiliki mekanisme yang jelas.
+4. Cache memiliki format dan aturan invalidasi.
+5. New Chat Recovery memiliki alur yang jelas.
+6. Incremental reading diterapkan.
+7. Subagent orchestration memiliki pembagian tugas.
+8. Token optimization tidak mengorbankan kualitas.
+9. Error recovery memiliki workflow.
+10. Automatic testing memiliki aturan validasi.
+11. Automatic test cleanup memiliki pengamanan.
+12. Existing test suite terlindungi.
+13. Tidak ada penghapusan data tanpa otorisasi.
+14. Tidak ada klaim keberhasilan tanpa bukti.
+15. Hanya satu file SKILL.md utama yang dibuat.
+16. Format skill valid untuk platform target.
+
+## 33. FINAL EXECUTION INSTRUCTIONS
+
+Mulai dengan audit repository dan dokumentasi skill.
+
+Jangan langsung membuat file sebelum memahami struktur proyek dan batasan platform.
+
+Setelah audit:
+
+1. Buat rencana implementasi.
+2. Implementasikan SKILL.md.
+3. Validasi seluruh bagian.
+4. Periksa konsistensi instruksi.
+5. Pastikan tidak ada fitur yang saling bertentangan.
+6. Jalankan pemeriksaan yang tersedia.
+7. Bersihkan hanya artefak sementara yang dibuat selama pengerjaan.
+8. Perbarui cache jika sistem cache sudah tersedia.
+9. Berikan laporan akhir.
+
+Laporan akhir harus berisi:
+
+- File yang dibuat
+- Fitur yang berhasil diimplementasikan
+- Fitur yang memerlukan dukungan platform
+- Hasil validasi
+- Hasil testing
+- Hasil test cleanup
+- Batasan yang ditemukan
+- Cara mengaktifkan skill
+- Cara menggunakan skill
+- Cara mengaktifkan kembali konteks pada chat baru
+
+Jangan menyatakan semua fitur sudah aktif jika hanya berupa instruksi yang belum didukung platform.
+
+Jangan membuat file tambahan yang tidak diperlukan.
+
+Jangan menghapus file proyek yang sudah ada tanpa persetujuan.
+
+PRINCIPAL RULE:
+
+Think deeply.
+Use context intelligently.
+Cache verified knowledge.
+Restore previous work.
+Read only what changed.
+Use subagents when available.
+Optimize token usage.
+Execute systematically.
+Test honestly.
+Clean temporary test artifacts.
+Preserve permanent test infrastructure.
+Verify everything.
+Never lose project continuity.

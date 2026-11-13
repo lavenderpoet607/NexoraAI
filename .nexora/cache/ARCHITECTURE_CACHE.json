@@ -1,0 +1,14 @@
+{
+  "project_id": "NexoraAI",
+  "architecture_pattern": "Unified Cognitive Agent Framework",
+  "core_components": {
+    "skill_definition": "nexora-advanced-intelligence/SKILL.md",
+    "workspace_skill": ".agents/skills/nexora-advanced-intelligence/SKILL.md",
+    "always_on_rule": "AGENTS.md",
+    "cache_store": ".nexora/cache/"
+  },
+  "runtime_integration": {
+    "discovery": ".agents/ discovery tree and root AGENTS.md rule loading",
+    "caching": "File-based persistent JSON store with change fingerprinting"
+  }
+}
